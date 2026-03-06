@@ -17,137 +17,31 @@
             { "label": "Number", "id": "number" },
             { "label": "Food (plural)", "id": "food" }
           ],
-          "template": "One day, I was walking down the street when suddenly a **{adj1}** limousine pulled up next to me. Out stepped **{celebrity}**, who said, \"You're the most **{adj2}** person I've ever seen! Want to be in my next movie?\"\n\nI was so shocked I dropped my **{animal}** on the ground! But {celebrity} just smiled and said, \"Perfect! That's exactly the kind of **{bodypart}** we need for the role!\"\n\nThe next thing I knew, I was **{verb1}** in front of **{number}** cameras, eating **{food}** for dinner, and living the life of a true movie star!"
+          "template": "I was having one of those completely ordinary **{adj1}** Tuesday afternoons, the kind where nothing exciting ever happens and you forget what day it is until someone mentions it at work. I was walking home from the grocery store, carrying a bag that contained nothing more interesting than frozen pizza and a suspicious amount of ice cream, when suddenly a stretch limousine pulled up beside me with tires screeching in a way that suggested the driver had watched too many action movies.\n\nThe window rolled down smoothly, and there sat **{celebrity}**, wearing sunglasses that probably cost more than my entire existence combined, including my student loans. They pointed directly at me with a perfectly manicured finger and declared, \"You! Yes, YOU! I've been searching every corner of this city for someone with such a **{adj2}** **{bodypart}**! The cameras will LOVE you!\"\n\nBefore I could even process what was happening, or question whether this was an elaborate prank being filmed for social media, I was being pulled into the leather interior by hands that had won awards for touching things. **{celebrity}** explained that their latest blockbuster needed someone who could authentically portray a person who had just discovered their pet **{animal}** could talk, and apparently my face was exactly what they envisioned for this absolutely ridiculous premise that somehow got greenlit by a major studio.\n\nThe next **{number}** weeks were a whirlwind of chaos that I still have trouble believing actually happened. I found myself **{verb1}** in front of massive camera rigs that made my apartment look like a storage closet, surrounded by crew members who took their jobs very seriously despite the absurdity of the scenes we were filming. Between takes, craft services served nothing but **{food}**, which I was contractually obligated to eat on camera at least once per day as part of my \"method preparation.\"\n\nBy the time filming wrapped, I had gained fifteen pounds and developed a strange appreciation for the culinary arts involving various types of **{food}**. The premiere was surreal - flashing cameras, screaming fans, and **{celebrity}** keeping an arm around me the entire evening like we were old friends instead of strangers who met during a limo ambush. Sometimes I still pinch myself wondering if it was all a dream, but the Oscar nomination letter sitting on my desk reminds me that yes, this is actually my life now."
         },
         {
           "words": [
+            { "label": "Place", "id": "place" },
             { "label": "Adjective", "id": "adj1" },
             { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
+            { "label": "Verb (ending in -ing)", "id": "verb1" },
             { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Place", "id": "place" },
             { "label": "Number", "id": "number" },
             { "label": "Exclamation", "id": "exclaim" }
           ],
-          "template": "I was at **{place}** minding my own business when **{celebrity}** approached me and said \"You! You're exactly what I need for my new film!\"\n\nI was so **{adj1}** that I started **{verb1}** uncontrollably. My **{bodypart}** was shaking like crazy!\n\n\"**{exclaim}**!\" I screamed. They handed me a contract worth **{number}** million dollars. Now I'm the biggest star in Hollywood!"
+          "template": "The whole thing started because I decided to treat myself to a quiet afternoon at **{place}**, minding my own business and enjoying what I thought would be a completely anonymous experience where nobody would recognize me or ask for anything. I was just sitting there, **{verb1}** in my own thoughts about whether I should order another coffee or just go home and face my responsibilities, when I noticed people starting to whisper and point in my direction with the kind of energy that usually means something significant is about to happen.\n\nThat's when **{celebrity}** approached my table, looking absolutely **{adj1}** and slightly out of breath, as if they had been running to find me specifically, which seemed impossible because I hadn't told anyone where I was going. \"I've been looking everywhere!\" they exclaimed, grabbing my **{bodypart}** with both hands like it was the most natural thing in the world to do to a complete stranger. \"The casting director said you were perfect, but I didn't believe it until now. We start shooting tomorrow!\"\n\nI sat there completely frozen, my brain unable to process what was happening, while around us other patrons had pulled out their phones and were recording the entire interaction like this was normal behavior. Before I could formulate a coherent response or ask any of the approximately million questions flooding my mind, **{celebrity}** had already pulled out a contract from somewhere and was pointing at the signature line with an expression that suggested saying no was not an option.\n\n\"**{number}** million dollars, three movie deal, full creative control,\" they said casually, as if offering someone a cup of coffee instead of a life-changing career opportunity. My hand moved almost involuntarily, signing away my next several years to an industry I knew nothing about, driven by some instinct I didn't know I possessed. \"**{exclaim}**!\" I finally managed to say, which **{celebrity}** took as enthusiastic agreement instead of the panicked exclamation it absolutely was.\n\nThey hugged me tightly before disappearing as quickly as they had arrived, leaving me sitting there with a life-changing contract and absolutely no idea what I had just agreed to. My quiet afternoon at **{place}** had become the day everything changed, and I still have no idea how to feel about it."
         },
         {
           "words": [
             { "label": "Adjective", "id": "adj1" },
             { "label": "Type of Movie", "id": "movie" },
             { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "My first **{movie}** movie audition was a disaster. I walked in feeling **{adj1}** and immediately tripped over my own **{bodypart}**.\n\nThe director, **{celebrity}**, yelled \"Cut! What are you doing?!\" I started **{verb1}** nervously.\n\nSomehow they loved it! I got the part and now I've won **{number}** Oscars. Life is weird."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Place", "id": "place" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Everyone said I looked like **{celebrity}** but I never believed them until I showed up at **{place}** looking absolutely **{adj1}**.\n\nA talent scout spotted me from across the room and rushed over. \"We need you on set RIGHT NOW!\" they screamed while pointing at my **{bodypart}**.\n\nI've been **{verb1}** in **{number}** movies since then. My **{adj2}** career is just getting started!"
-        },
-        {
-          "words": [
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "I was just **{verb1}** in my living room when my agent called. \"**{celebrity}** wants YOU for their new film!\"\n\nI showed up to the audition feeling **{adj1}** and forgot all my lines. Instead, I just pointed at my **{bodypart}** and made weird noises.\n\nThey called it \"genius method acting.\" **{number}** standing ovations later, I heard someone yell \"**{exclaim}**! We have our star!\""
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Body Part", "id": "bodypart" },
             { "label": "Verb", "id": "verb1" },
             { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "The casting call said \"Must be **{adj1}** and willing to eat **{food1}** on camera.\" I thought it was a joke.\n\nTurns out **{celebrity}** was directing and they **{verb1}** when I walked in with sauce all over my **{bodypart}**.\n\n\"That's the look we need!\" they shouted. I've been in **{number}** blockbusters since. Never underestimate the power of messy eating."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Place", "id": "place" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
             { "label": "Number", "id": "number" },
             { "label": "Exclamation", "id": "exclaim" }
           ],
-          "template": "I never thought my life would change on a **{adj1}** Tuesday morning, but there I was at **{place}**, waiting in line for coffee like any normal person.\n\nSuddenly, **{celebrity}** burst through the door, looked directly at me, and shouted \"THERE YOU ARE! The world has been searching for someone with a **{adj2}** **{bodypart}** like yours!\"\n\nBefore I could respond, I was **{verb1}** into a waiting helicopter. **{number}** minutes later, I was on set. \"**{exclaim}**!\" I yelled as the cameras started rolling. My barista days were officially over."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Type of Movie", "id": "movie" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The script said it was a **{adj1}** **{movie}** film, but nothing prepared me for what happened on day one.\n\n**{celebrity}**, my co-star, looked at my **{bodypart}** during rehearsal and whispered \"That's going to be iconic.\"\n\nI didn't understand until the scene where I had to **{verb1}** in front of **{number}** extras. The director screamed \"PERFECTION!\" and everyone started clapping.\n\n\"**{exclaim}**!\" I muttered to myself. This is what fame feels like."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Working at **{place}** was supposed to be my temporary job while I pursued acting. How ironic.\n\nOne **{adj1}** afternoon, a customer kept staring at my **{bodypart}** while I was **{verb1}**. I thought they were being creepy until they handed me a business card.\n\n\"**{celebrity}**'s office. Call this number. You're exactly what we need.\"\n\n**{number}** auditions later, I landed the role. Sometimes your big break comes from the most unexpected places. \"**{exclaim}**!\" I shouted when I got the call."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Place", "id": "place" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "The Hollywood party was **{adj1}** and **{adj2}**, filled with people I'd only seen on screens my whole life.\n\nI was hiding in the corner when **{celebrity}** approached, pointed at my **{bodypart}**, and declared \"THAT'S the look we've been searching for!\"\n\nBefore I could **{verb1}** away in panic, I was surrounded by photographers. They wanted shots for **{place}** magazine.\n\n**{number}** covers later, I realized this was no dream. I belonged here."
-        },
-        {
-          "words": [
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Place", "id": "place" }
-          ],
-          "template": "I was just **{verb1}** through my normal day when everything changed. A **{adj1}** limousine pulled up beside me at **{place}**.\n\n**{celebrity}** leaned out the window and said \"Get in. Your **{bodypart}** is about to make you famous.\"\n\nI laughed, thinking it was a prank. But **{number}** minutes later, I was at a studio being fitted for costumes.\n\n\"**{exclaim}**!\" I screamed when I saw myself on the monitor. The cameras loved me."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Type of Movie", "id": "movie" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The **{movie}** genre wasn't my usual choice, but the paycheck was too good to refuse.\n\nOn set, **{celebrity}** kept telling me to be more **{adj1}** with my **{bodypart}**. \"The camera sees EVERYTHING!\" they yelled.\n\nI spent hours **{verb1}** in front of the green screen, feeling ridiculous.\n\nBut when the premiere came, **{number}** people gave us a standing ovation. \"**{exclaim}**!\" I cried. All that awkwardness was worth it."
+          "template": "Walking into that **{movie}** movie audition, I felt **{adj1}** and completely unprepared, but my agent had insisted this was the opportunity of a lifetime and that I would be stupid to pass it up, which was probably true but didn't make me feel any less terrified. The waiting room was filled with people who looked like they had been born to be on screen, with perfect hair and confident postures that spoke of years of training and preparation, while I sat there questioning every life choice that had led me to this moment.\n\nWhen they finally called my name, I walked in trying to project confidence I definitely did not feel, hoping that somehow the casting directors wouldn't notice that I was essentially making this up as I went along. **{celebrity}** was sitting behind a long table with three other people, all of them looking at me with expressions I couldn't quite read, which made me even more nervous than I already was.\n\nThey asked me to perform a scene that involved losing control of my **{bodypart}** in a dramatic fashion, which sounded simple enough until I actually tried to do it in front of people who could end my career before it started. I **{verb1}** so hard that I actually lost my balance and fell off the small stool they had set up for the audition, landing on the floor with a thud that echoed through the silent room.\n\nThe room went completely silent, and I prepared myself for the inevitable rejection, already planning what I would tell my agent about how it went. But then **{celebrity}** started laughing, not in a mean way, but in genuine amusement that seemed to spread through the room like wildfire. \"That's it!\" they exclaimed. \"That's exactly the energy we need! The authenticity! The chaos! The complete lack of self-awareness!\"\n\nThe other people at the table started nodding enthusiastically, scribbling notes on their clipboards like I had just performed Shakespeare instead of falling on my face. \"**{exclaim}**!\" I said, still on the floor, completely confused about what had just happened and whether this was actually going well. They offered me the role on the spot, explaining that my authentic clumsiness was exactly what the character needed. **{number}** months later, I'm watching myself on the big screen, still amazed that falling on my face literally launched my career."
         }
       ]
     },
@@ -168,137 +62,31 @@
             { "label": "Number", "id": "number" },
             { "label": "Liquid", "id": "liquid" }
           ],
-          "template": "Last night, I went to the most **{adj1}** restaurant in town. The waiter asked what I wanted, and I said, \"I'll have the **{food1}**, please!\"\n\nWhen the dish arrived, it was **{verb1}**! I called the waiter over and pointed at it with my **{bodypart}**. \"What is this?!\" I exclaimed.\n\nThe waiter just smiled and said, \"**{exclaim}**! That's our specialty! Even **{celebrity}** orders it **{number}** times a week!\"\n\nI took a bite and immediately reached for my glass of **{liquid}**. Let's just say I won't be going back there anytime soon!"
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "The chef came out and said \"Tonight's special is **{adj1}** **{food1}**!\" I was skeptical but ordered anyway.\n\nHalfway through eating, the food started **{verb1}** on my plate! My **{bodypart}** froze in shock.\n\n\"**{exclaim}**!\" I yelled. The entire restaurant stared. Turns out it was a prank for **{number}** hidden cameras. Worst dinner ever!"
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "The restaurant was so **{adj1}** that I needed a reservation three months in advance. I ordered the **{adj2}** **{food1}** without reading the description.\n\nWhen it arrived, the waiter **{verb1}** all over my **{bodypart}** while explaining the \"experience.\"\n\n\"**{exclaim}**!\" I shouted when the bill came. **{number}** hundred dollars for food I couldn't even eat. Never again!"
+          "template": "The restaurant had been recommended to me by exactly no one, but something about its **{adj1}** exterior and the mysterious aroma wafting from within drew me in like a moth to a flame, despite every rational instinct screaming that I should probably eat somewhere with more than three stars on Google. I settled into a corner table that felt like it had been specifically positioned for maximum isolation, perused the menu with exactly three items on it, and decided to take a chance on the **{food1}** because sometimes you have to trust the universe.\n\nThe waiter nodded approvingly when I ordered, as if I had passed some kind of unspoken test that other customers apparently failed on a regular basis. When the dish arrived, I understood why the waiter had given me that look. The **{food1}** was **{verb1}** right there on the plate, moving in ways that food absolutely should not move under any circumstances known to culinary science.\n\nI called the waiter over, pointing at my **{bodypart}** which had started shaking involuntarily from the sheer shock of what I was witnessing. \"**{exclaim}**!\" I exclaimed, perhaps louder than necessary, causing several other diners to turn and stare at my table with expressions ranging from concern to amusement.\n\nThe waiter just smiled serenely and explained that this was the restaurant's signature experience - the food was supposed to move, it was part of the \"dining theater\" concept that had made this place famous among people with very specific tastes. Apparently **{celebrity}** had been here **{number}** times and loved every second of it, which made me wonder what kind of life **{celebrity}** was living that this counted as entertainment.\n\nThe waiter then brought me a complimentary glass of **{liquid}**, saying it would help calm my nerves and enhance the overall experience. They weren't wrong. By the end of the meal, I was laughing so hard at the absurdity of it all that the other diners started clapping, and I realized I had just experienced something I would be telling people about for years to come. I left with a story I still tell at every dinner party, and a reservation for next week already booked because apparently I'm now one of those people."
         },
         {
           "words": [
             { "label": "Place", "id": "place" },
             { "label": "Adjective", "id": "adj1" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Got kicked out of **{place}** for what I can only describe as \"creative dining.\" I was just trying to enjoy my **{adj1}** **{food1}**.\n\nBut then I started **{verb1}** because it tasted so good and accidentally hit the person next to me with my **{bodypart}**.\n\n\"**{exclaim}**!\" the manager screamed. Banned for life. The food was worth it though."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "My date ordered the **{adj1}** **{food1}** and I immediately knew we were soulmates. Until they started eating it with their **{bodypart}**.\n\nI couldn't help but **{verb1}** in disgust. They looked at me and said \"What? It's efficient!\"\n\n**{number}** minutes later, I was single. **{exclaim}**, I guess some dealbreakers are real."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Type of Food", "id": "food1" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "The all-you-can-eat buffet looked **{adj1}** and I took it as a personal challenge. Loaded my plate with **{food1}**.\n\nHalfway through, I was **{verb1}** uncontrollably while clutching my **{bodypart}** in pain.\n\n\"**{exclaim}**!\" I groaned. **{number}** trips later and I learned my lesson. Actually, who am I kidding, I'll be back next week."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Place", "id": "place" },
             { "label": "Food", "id": "food1" },
             { "label": "Body Part", "id": "bodypart" },
             { "label": "Verb (ending in -ing)", "id": "verb1" },
             { "label": "Number", "id": "number" },
             { "label": "Exclamation", "id": "exclaim" }
           ],
-          "template": "I'd heard about this **{adj1}** speakeasy hidden in **{place}**, but nothing prepared me for the **{adj2}** experience inside.\n\nThe menu had only one item: **{food1}**. \"Trust us,\" the waiter winked.\n\nHalfway through the meal, I noticed my **{bodypart}** tingling strangely. Then I started **{verb1}** without being able to stop!\n\n\"**{exclaim}**!\" I managed to gasp between fits. The chef emerged from the kitchen, bowing. \"My **{number}**th customer to have that reaction! It's a tradition now!\"\n\nThey brought out complimentary dessert. I'm still shaking."
+          "template": "I had been planning this dinner at **{place}** for months, saving up every spare dollar to experience what everyone was calling the most **{adj1}** restaurant in the city, with a reservation system that was notoriously difficult to navigate. You had to call exactly three months in advance at precisely 9 AM, and even then, getting a table was never guaranteed because apparently there was a waiting list longer than my patience for most things.\n\nBut I had persisted, and finally, the night had arrived. I ordered the chef's signature dish, **{food1}**, with great anticipation and the kind of reverence usually reserved for religious experiences. The waiter brought it out with theatrical flair, explaining each component in excruciating detail that made me feel like I was attending a lecture instead of eating dinner.\n\nBut halfway through my first bite, something felt wrong in a way that I couldn't immediately identify. My **{bodypart}** started tingling, then burning, then I was **{verb1}** so hard I nearly fell off my chair and onto the very expensive floor that probably cost more than my rent.\n\nThe entire restaurant went silent as **{number}** diners turned to watch my very public struggle with whatever was happening to me. \"**{exclaim}**!\" I managed to gasp between coughs, drawing even more attention to a situation that was already about as public as it could get.\n\nThe chef emerged from the kitchen, took one look at me, and started laughing in a way that suggested this happened more often than you might expect. Turns out they had accidentally used a special pepper imported from a remote region where locals have built up tolerance over generations through careful exposure and probably some casualties. I, however, had not. They comped my meal, gave me a jar of their special cooling sauce, and I still have nightmares about that **{food1}**. But would I go back? Absolutely. The story alone was worth it, and I've learned to always ask about the pepper situation before ordering."
         },
         {
           "words": [
-            { "label": "Place", "id": "place" },
             { "label": "Adjective", "id": "adj1" },
+            { "label": "Adjective", "id": "adj2" },
             { "label": "Food", "id": "food1" },
             { "label": "Body Part", "id": "bodypart" },
             { "label": "Verb", "id": "verb1" },
             { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The food critic assignment at **{place}** was supposed to be simple. Write about the **{adj1}** **{food1}**, collect my paycheck, go home.\n\nBut then **{celebrity}** walked in, spotted me, and **{verb1}** straight to my table!\n\n\"I LOVE your reviews!\" they exclaimed, grabbing my **{bodypart}** enthusiastically. \"Can you recommend something?\"\n\nI panicked and pointed at random dishes. **{number}** courses later, we were best friends. \"**{exclaim}**!\" they laughed when the bill arrived. \"I'm paying! You just write about the experience!\"\n\nBest. Assignment. Ever."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The cooking competition seemed **{adj1}** enough. How hard could making **{food1}** be?\n\nBut the judges were **{adj2}** and terrifying. One kept staring at my **{bodypart}** while I worked, taking notes furiously.\n\n\"You're **{verb1}** all wrong!\" another judge suddenly shouted. \"But somehow... it's working!\"\n\n**{number}** minutes of pure chaos later, they declared me the winner. \"**{exclaim}**!\" I screamed, holding my trophy. Still don't know what I did right."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Type of Food", "id": "food1" },
-            { "label": "Place", "id": "place" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Street food in **{place}** comes with risks. I knew this. But the **{adj1}** **{food1}** looked too delicious to resist.\n\nFirst bite and my **{bodypart}** immediately started to **{verb1}**. The vendor saw my expression and started laughing.\n\n\"**{number}** tourists have had that exact reaction today!\" they chuckled, handing me water.\n\n\"**{exclaim}**!\" I gasped, finally able to breathe again. Paid **{number}** dollars for the most memorable meal of my life. Worth every penny."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Famous Person", "id": "celebrity" },
             { "label": "Number", "id": "number" }
           ],
-          "template": "The dinner theater experience promised to be **{adj1}** and **{adj2}**, but I expected actual theater, not becoming PART of it.\n\nMidway through my **{food1}**, actors surrounded the table. One grabbed my **{bodypart}** and declared \"YOU are the chosen one!\"\n\nI was **{verb1}** onto the stage before I could protest. **{celebrity}**, in the audience, started laughing so hard they choked.\n\n**{number}** curtain calls later, I was still in costume. The director offered me a permanent role. I still have the contract somewhere."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Roommate dinner at **{place}** was supposed to be casual. Then someone suggested we try the legendary **{adj1}** **{food1}** challenge.\n\n\"First one to finish wins **{number}** dollars!\" my roommate announced.\n\nHalfway through, my **{bodypart}** felt like it was going to explode. I watched my roommate **{verb1}** in defeat across the table.\n\n\"**{exclaim}**!\" I groaned, shoving in the final bite. Victory never tasted so painful. Still waiting on that money, by the way."
+          "template": "The food critic assignment was supposed to be straightforward - review the new fusion restaurant downtown, write about the experience, collect my paycheck, move on to the next assignment. But nothing about this place was straightforward from the moment I walked through the door. Everything felt **{adj1}** and **{adj2}**, like I had stepped into an alternate dimension where the normal rules of dining didn't apply and the staff knew something I didn't.\n\nI ordered the **{food1}**, which the waiter described as \"a journey through the chef's emotional landscape\" in a tone that suggested I should understand what that meant. I wasn't prepared for what that actually meant in practice. Halfway through the dish, I felt something touch my **{bodypart}** under the table in a way that made me jump about three feet in the air.\n\nI **{verb1}** in surprise, looking around to see what had happened, only to discover it turned out to be **{celebrity}**, who was dining at the next table and had apparently recognized me from my reviews that they apparently read regularly. They had been trying to get my attention for several minutes while I was lost in my food-induced existential crisis, which explained the touching situation.\n\nWe ended up talking for **{number}** hours, long after the restaurant had closed and the staff had started giving us very pointed looks about leaving. The review I wrote the next day was nothing like what my editor expected, but it became my most popular piece ever, with readers responding to the honesty and unexpected celebrity encounter. Sometimes the best stories come from the most unexpected detours, and this was definitely one of them."
         }
       ]
     },
@@ -320,135 +108,31 @@
             { "label": "Exclamation", "id": "exclaim" },
             { "label": "Number", "id": "number" }
           ],
-          "template": "Welcome to the most **{adj1}** theme park in the world! I was so excited to try the new roller coaster that I ate **{number}** **{food1}**s for breakfast.\n\nMy friend said, \"This ride is so **{adj2}**, they say **{celebrity}** threw up on it last week!\"\n\nAs we boarded, I felt my **{bodypart}** start to shake. The ride began **{verb1}** faster and faster! Suddenly, a **{animal}** appeared out of nowhere and started running alongside the track!\n\n\"**{exclaim}**!\" I screamed, as we did a triple loop-de-loop. Best. Day. Ever!"
+          "template": "The theme park had been hyped as the most **{adj1}** amusement destination on the entire west coast, with marketing campaigns that had been following me around the internet for months like a persistent ghost. I arrived at opening time, fueled by **{number}** **{food1}**s from the gas station and an unhealthy amount of excitement that probably should have been concerning to medical professionals. The crowds were already massive, with people lining up for rides that wouldn't open for another hour, creating an atmosphere of barely contained chaos.\n\nMy first target was the new roller coaster that everyone said was so **{adj2}** it had made **{celebrity}** cry during their promotional ride last week, which was either excellent marketing or a genuine warning that I chose to ignore. As I boarded, I felt my **{bodypart}** start to shake with a combination of fear and anticipation that made me question my life choices. The safety bar clicked into place with a sound that was definitely more ominous than necessary, and we began **{verb1}** up the first hill, higher and higher until the entire park stretched out below us like a miniature version of itself.\n\nThen came the drop - a stomach-lurching plunge that had everyone screaming \"**{exclaim}**!\" at the top of their lungs in a chorus of pure terror. Mid-ride, somehow, a costumed **{animal}** mascot appeared to be running alongside the track, waving at us as we passed at speeds that should have made this physically impossible. I don't know how it got there, and honestly, I don't want to know because some mysteries are better left unsolved.\n\nBy the time we returned to the station, my legs were jelly, my voice was gone, and I immediately got back in line to do it all over again because apparently I had learned nothing. Best day ever, and I would absolutely do it again."
         },
         {
           "words": [
+            { "label": "Place", "id": "place" },
             { "label": "Adjective", "id": "adj1" },
             { "label": "Ride Type", "id": "ride" },
             { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
+            { "label": "Verb (ending in -ing)", "id": "verb1" },
+            { "label": "Number", "id": "number" },
+            { "label": "Exclamation", "id": "exclaim" }
           ],
-          "template": "I waited **{number}** hours in line for the new **{ride}** and it was SO worth it!\n\nAs soon as it started, my **{bodypart}** shot up in the air and I couldn't stop **{verb1}**!\n\n\"**{exclaim}**!\" everyone screamed. The ride was so **{adj1}** that three people lost their shoes. 10/10 would recommend!"
+          "template": "Working at **{place}** during summer break was supposed to be an easy way to make money - free park access, flexible hours, and the chance to meet people from all over the world who were having the time of their lives. What I didn't anticipate was how **{adj1}** the job would actually be, especially during peak season when the crowds were absolutely insane and everyone seemed to have forgotten how lines work.\n\nMy favorite part of the job, though, was getting to experience the **{ride}** whenever I wanted, which became both a blessing and a curse as the summer progressed. During slow periods, I would hop on, ride it empty, and feel like I had the entire park to myself in moments of peaceful solitude. One particular afternoon, I was **{verb1}** through the pre-ride safety check when I noticed something strange - my **{bodypart}** was tingling in a way that had nothing to do with the ride's usual sensations and everything to do with something being genuinely wrong.\n\nTurns out there had been a minor electrical issue that day, and I had unknowingly ridden through it **{number}** times before anyone noticed because I was the only person crazy enough to be on the ride during a slow period. \"**{exclaim}**!\" my supervisor yelled when they finally caught up with me and realized what had happened. I was fine, apparently, but they shut down the ride for inspection anyway because liability is a real concern.\n\nThe incident earned me a permanent ban from operating that particular attraction, but honestly, the story was worth more than any shift differential they could have paid me, and I still tell it at parties."
         },
         {
           "words": [
             { "label": "Adjective", "id": "adj1" },
             { "label": "Adjective", "id": "adj2" },
             { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
+            { "label": "Verb", "id": "verb1" },
             { "label": "Food", "id": "food1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "The sign said \"Must be this tall to ride.\" I'm **{adj1}** so I barely qualified. Got on the **{adj2}** roller coaster anyway.\n\nHalfway through, I started **{verb1}** because I ate too much **{food1}** before riding. My **{bodypart}** was hanging over the safety bar!\n\n\"**{exclaim}**!\" screamed the person behind me. **{number}** people witnessed my humiliation. Still going on every ride again tomorrow."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Snuck into **{place}** after hours with my friends. Everything looked **{adj1}** in the moonlight.\n\nI tried to **{verb1}** onto the carousel but slipped and landed on my **{bodypart}**.\n\n\"**{exclaim}**!\" I yelled. Security showed up in **{number}** minutes. We ran so fast. Worth the adrenaline rush!"
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Ride Type", "id": "ride" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "My friend dared me to ride the **{ride}** with my hands up the whole time. It looked **{adj1}** but I accepted.\n\nHalfway through, my **{bodypart}** started cramping from holding my arms up. I was **{verb1}** so hard I thought I'd pass out.\n\n\"**{exclaim}**!\" I screamed on the final drop. Made it through alive. **{number}** more rides before lunch. Let's go!"
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Ate way too much **{adj1}** **{food1}** before hitting the rides. Big mistake.\n\nFirst roller coaster had me **{verb1}** over the side while clutching my **{bodypart}**.\n\n\"**{exclaim}**!\" everyone behind me screamed. Got kicked off after **{number}** rides. Security escort was embarrassing but the memories are priceless."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Place", "id": "place" },
-            { "label": "Ride Type", "id": "ride" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
             { "label": "Number", "id": "number" },
             { "label": "Exclamation", "id": "exclaim" }
           ],
-          "template": "The urban legend said the **{adj1}** **{ride}** at **{place}** was haunted. I thought it was just a **{adj2}** marketing gimmick.\n\nHalfway through the ride, all the lights went out. My **{bodypart}** started tingling as something cold brushed against it.\n\nI was **{verb1}** in complete darkness for what felt like **{number}** hours.\n\nWhen the lights came back on, everyone was screaming. \"**{exclaim}**!\" I yelled, pointing at the empty seat next to me. The safety bar was still down. Something rode with us."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Working at **{place}** had its perks. Free rides, unlimited food, and occasionally meeting **{celebrity}**.\n\nOne **{adj1}** day, they showed up incognito but I recognized them immediately. Their **{bodypart}** was sticking out from under a very obvious disguise.\n\n\"Want to skip the line?\" I whispered. They nodded enthusiastically.\n\nWe **{verb1}** past **{number}** waiting tourists. \"**{exclaim}**!\" they laughed as we hopped on the front car. Best tip I've ever received."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Ride Type", "id": "ride" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Type of Animal", "id": "animal" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The **{ride}** looked **{adj1}** from the ground. Up close, it was terrifying.\n\nAs we climbed to the top, I felt my **{bodypart}** turn to jelly. Below us, someone had brought a **{animal}** into the park!\n\nWe were **{verb1}** at the peak when the ride JAMMED. **{number}** minutes of pure panic later, it suddenly dropped.\n\n\"**{exclaim}**!\" everyone screamed in unison. My voice was gone for a week. Still going back tomorrow."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The eating contest before the rides was a **{adj1}** mistake. The **{adj2}** **{food1}** challenge seemed doable.\n\n**{number}** minutes and three plates later, my **{bodypart}** was screaming for mercy.\n\nThen we got on the first roller coaster. I **{verb1}** all over the person in front of me.\n\n\"**{exclaim}**!\" they yelled, wiping themselves off. Got banned from that ride specifically. The others were fair game though."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Ride Type", "id": "ride" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "VIP tour of **{place}** cost more than my rent, but experiencing the **{ride}** before opening was **{adj1}** worth it.\n\n**{celebrity}** was there too, clutching their **{bodypart}** nervously as we approached the track.\n\n\"I've never **{verb1}** on a roller coaster before,\" they admitted.\n\n**{number}** loops later, they were screaming louder than anyone. The photos are priceless. We still laugh about it."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Type of Animal", "id": "animal" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The petting zoo seemed innocent enough. Then a **{animal}** bit my **{bodypart}**.\n\nI **{verb1}** so hard I fell into the pig pen. **{adj1}** doesn't begin to describe the smell.\n\n**{number}** children pointed and laughed. \"**{exclaim}**!\" I yelled, covered in mud.\n\nThe park gave me free passes for life. Best compensation ever, honestly."
+          "template": "The eating contest before the rides was a decision I would come to regret approximately seventeen minutes later, though at the time it seemed like a fantastic idea that would make for a great story. The **{adj1}** **{food1}** challenge seemed manageable - how much could one person really eat in ten minutes? The answer, as I discovered, was far too much for any reasonable human to handle before getting on roller coasters.\n\nI managed to consume **{number}** servings, which felt like a victory until I stood up and immediately felt my **{bodypart}** protest violently against the decision I had just made. My friends, being the wonderful people they are, convinced me to get on the **{adj2}** roller coaster anyway. \"It'll help settle your stomach!\" they insisted, which is absolutely not how digestion works according to any medical professional.\n\nHalfway through the first loop, I **{verb1}** in a way that changed the lives of everyone in the front two rows, creating a moment that will live in theme park infamy. \"**{exclaim}**!\" screamed the person behind me, though whether they were reacting to the ride or my contribution to the experience, I'll never know for certain.\n\nI was escorted off the premises with a lifetime ban from that particular attraction, which seems excessive but I understand their reasoning. The photos somehow look worse than the reality, which I didn't think was possible but here we are. Sometimes the best stories come from the worst decisions, and this is definitely one of those stories."
         }
       ]
     },
@@ -469,135 +153,19 @@
             { "label": "Exclamation", "id": "exclaim" },
             { "label": "Number", "id": "number" }
           ],
-          "template": "My vacation to **{place}** was supposed to be relaxing, but things got **{adj1}** very quickly!\n\nOn day one, I tried to **{verb1}** on the beach, but a wild **{animal}** stole my sunscreen and ran away! I chased it using only my **{bodypart}** to dig through the sand.\n\nExhausted, I stopped at a food stand and ordered some **{food1}**. The vendor looked at me and said, \"**{exclaim}**! That'll be **{number}** please!\"\n\nI went home with a sunburn, no money, and a story I'll never forget!"
+          "template": "The vacation to **{place}** had been planned for months with the kind of meticulous detail that would make a military strategist proud - carefully researched hotels, meticulously organized itineraries, and a budget that had taken a year to save because I wanted everything to be perfect. I had envisioned peaceful days on pristine beaches, cultural exploration that would broaden my horizons, and the kind of relaxation that only comes from being completely disconnected from work and responsibility.\n\nWhat I got instead was an education in the art of things going wrong that should probably be taught in schools. Day one started with a **{adj1}** encounter at the airport when I realized I had packed my sunscreen in my checked luggage, which had been sent to a different continent through what I can only assume was airline magic. By day two, I was attempting to **{verb1}** on the beach using a stolen hotel towel as makeshift shade, when a wild **{animal}** decided my belongings looked more appealing than their natural habitat and made off with my bag.\n\nThe creature grabbed my bag and ran with the kind of determination that suggested it had been planning this heist for weeks, and I chased it using only my **{bodypart}** to propel myself through the sand in a scene that would have been comedic if it wasn't happening to me. Exhausted and defeated, I stopped at a roadside stand and ordered what the vendor assured me was the local specialty - **{food1}**.\n\n\"**{exclaim}**!\" I exclaimed after the first bite, though whether from delight or horror, I still can't say to this day. The meal cost **{number}** times what it should have, but at that point, I was too tired to argue about tourist pricing. I went home with a sunburn, no souvenirs, and a story that has become the stuff of legend in my family. Sometimes the worst vacations make the best memories."
         },
         {
           "words": [
             { "label": "Place", "id": "place" },
             { "label": "Adjective", "id": "adj1" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
             { "label": "Body Part", "id": "bodypart" },
+            { "label": "Verb (ending in -ing)", "id": "verb1" },
+            { "label": "Number", "id": "number" },
             { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
+            { "label": "Famous Person", "id": "celebrity" }
           ],
-          "template": "Booked an all-inclusive trip to **{place}** and it was anything BUT inclusive!\n\nThe hotel was so **{adj1}** that I caught my roommate **{verb1}** in the lobby. My **{bodypart}** still hasn't recovered from the shock!\n\n\"**{exclaim}**!\" I yelled at the manager. They gave me a **{number}** dollar refund. Vacation ruined!"
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Place", "id": "place" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "The vacation rental looked **{adj1}** in the photos. In reality, it was **{adj2}** and smelled weird.\n\nI tried to sleep but something kept touching my **{bodypart}** under the covers. Turned on the light and **{verb1}** so hard I fell off the bed.\n\n\"**{exclaim}**!\" I screamed. Packed my bags at **{number}** AM. Some vacations aren't worth the trauma."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Went to **{place}** for the famous **{adj1}** **{food1}**. First bite and I knew something was wrong.\n\nStarted **{verb1}** uncontrollably while my **{bodypart}** turned three different colors.\n\n\"**{exclaim}**!\" the waiter yelled, rushing over with water. Turns out I'm allergic to deliciousness. Vacation ended in the ER."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Place", "id": "place" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "My **{adj1}** vacation started with losing my passport. Spent **{number}** hours at the airport with my **{bodypart}** stuck in the security scanner.\n\nThey made me **{verb1}** in front of everyone while agents whispered suspiciously.\n\n\"**{exclaim}**!\" I finally yelled. Made it to **{place}** three days late. Best trip ever, honestly."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Place", "id": "place" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Decided to try **{verb1}** in **{place}** because it looked **{adj1}** on Instagram.\n\nHalfway through, my **{bodypart}** cramped up and I couldn't move.\n\n\"**{exclaim}**!\" I screamed while floating there helplessly. **{number}** tourists took photos instead of helping. Social media is a lie."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Type of Animal", "id": "animal" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The eco-resort in **{place}** promised an \"authentic nature experience.\" What they didn't mention was the **{adj1}** wildlife situation.\n\nNight one, I woke up to something **{adj2}** touching my **{bodypart}**. Turned on the light and found myself **{verb1}** face-to-face with a **{animal}**.\n\n**{number}** staff members came running when I screamed \"**{exclaim}**!\"\n\nThey laughed. \"Oh, that's just George. He visits all the guests.\" I did NOT get my money's worth of sleep."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Place", "id": "place" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Solo travel to **{place}** seemed **{adj1}** and empowering until I got hopelessly lost.\n\nMy **{bodypart}** was aching from walking when I stumbled into a private event. **{celebrity}** looked up and **{verb1}** toward me.\n\n\"You're early!\" they announced to the crowd. Before I could explain, I was pulled onstage for **{number}** minutes of awkward fame.\n\n\"**{exclaim}**!\" I finally managed. They gave me a free meal and a signed photo. Best wrong turn ever."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The street food tour was **{adj1}** until we got to the **{adj2}** **{food1}** station.\n\nThe guide said \"It's completely safe!\" but my **{bodypart}** started **{verb1}** after just one bite.\n\n**{number}** other tourists had the same reaction. \"**{exclaim}**!\" we all groaned in unison.\n\nThe guide shrugged. \"Local bacteria builds character!\" We're still debating whether to sue."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Cruise ship vacation to **{place}** was **{adj1}** until the norovirus hit.\n\nDay three, my **{bodypart}** felt strange. By dinner, I was **{verb1}** over the railing like everyone else.\n\n**{number}** passengers in the medical bay. \"**{exclaim}**!\" we all groaned together.\n\nThey gave us complimentary drinks for the suffering. The captain apologized daily. Still have the t-shirt."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Type of Animal", "id": "animal" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Place", "id": "place" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The wildlife sanctuary tour in **{place}** promised \"up-close encounters.\" They weren't kidding.\n\nA **{animal}** locked eyes with me, then made a beeline for my **{bodypart}**.\n\nI was **{verb1}** away when the guide laughed \"Oh, they just love you!\"\n\n**{number}** scratches and one torn shirt later, \"**{exclaim}**!\" I yelled. The photos are incredible though. Totally worth it."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Airport layover turned into an unexpected adventure in **{place}**. My flight was **{adj1}** delayed.\n\nWandering the terminal, I **{verb1}** into **{celebrity}** spilling coffee all over their **{bodypart}**.\n\n\"**{exclaim}**!\" I screamed. They laughed, \"Best thing that's happened all day!\"\n\n**{number}** hours of conversation later, we exchanged numbers. Missed my rebooked flight to stay. Some delays are blessings."
+          "template": "The all-inclusive resort at **{place}** promised paradise in their marketing materials - unlimited food and drinks, pristine beaches, and activities for every interest that would keep you entertained for the entire stay. The photos online had looked **{adj1}** and inviting, showing happy couples walking hand in hand through impossibly beautiful landscapes that I now suspect were taken in a completely different location.\n\nWhat the photos didn't show was the construction happening on three sides of the property, the algae-covered beach that looked more like a swamp, or the fact that the \"unlimited\" drinks required an additional fee that wasn't mentioned anywhere on the website. My **{bodypart}** started reacting to something in the pool within hours of arrival, leaving me **{verb1}** around the resort in search of relief that never seemed to materialize.\n\nTo make matters worse, **{celebrity}** was staying at the resort and had apparently complained about my appearance in the background of their Instagram stories, which somehow led to **{number}** people recognizing me and asking for their autograph instead of mine. \"**{exclaim}**!\" I finally yelled at the front desk after the **{number}**th person asked for a selfie with the celebrity who was definitely not me.\n\nThey offered a discount on a future stay as compensation for the experience. I declined. Some lessons can only be learned through suffering, and I am now very well educated about reading resort reviews before booking anything."
         }
       ]
     },
@@ -618,7 +186,7 @@
             { "label": "Exclamation", "id": "exclaim" },
             { "label": "Number", "id": "number" }
           ],
-          "template": "I finally got tickets to the biggest **{genre}** concert of the year! The arena was **{adj1}** and packed with fans.\n\nWhen the show started, I was **{verb1}** so hard that I accidentally hit the person next to me with my **{bodypart}**. They turned around and it was **{celebrity}**!\n\n\"Sorry!\" I yelled over the music. They just laughed and handed me their **{food1}**.\n\nBest concert ever! I sang along to all **{number}** songs, even though I only knew the words to one!"
+          "template": "The arena was packed to capacity with fans who had been waiting months, some even years, for this moment when their favorite **{genre}** artists would finally perform in their city. The energy in the building was **{adj1}**, electric, the kind of atmosphere that makes your skin tingle with anticipation and makes you feel like you're part of something bigger than yourself.\n\nWhen the lights finally went down and the first notes hit, I lost all control of my physical being. I was **{verb1}** so hard that I accidentally elbowed the person next to me with my **{bodypart}** in a way that would normally result in an argument or at least a dirty look. They turned around, and I froze - it was **{celebrity}**, incognito in a baseball cap that fooled absolutely no one but themselves.\n\n\"Sorry!\" I yelled over the music, mortified beyond measure. They just laughed, handed me their half-eaten **{food1}** like we were old friends, and started singing along like this was the most normal thing in the world. We spent the next **{number}** hours as unlikely concert buddies, sharing food, singing at the top of our lungs, and generally having the kind of experience that makes for legendary stories you tell for years.\n\n\"**{exclaim}**!\" we both screamed during the final song, two strangers united by music and the shared experience of being alive in this moment. We exchanged numbers afterward, and we're still friends today, which seems impossible but somehow worked out."
         },
         {
           "words": [
@@ -629,123 +197,7 @@
             { "label": "Exclamation", "id": "exclaim" },
             { "label": "Number", "id": "number" }
           ],
-          "template": "Front row at the **{band}** concert! I was so **{adj1}** I forgot how to breathe!\n\nThe lead singer pointed at my **{bodypart}** and yelled \"YOU! Come on stage!\" I started to **{verb1}** in panic.\n\n\"**{exclaim}**!\" the crowd screamed. I played **{number}** songs with them. Now I'm famous!"
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Music Genre", "id": "genre" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Snuck into the **{genre}** festival with a fake ID. The vibe was **{adj1}** until security started looking **{adj2}**.\n\nI started **{verb1}** nervously while clutching my **{bodypart}** where I hid the fake ID.\n\n\"**{exclaim}**!\" they yelled, spotting me. Ran through **{number}** different stages before escaping. Best show I've ever seen!"
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "The underground concert at **{place}** was so **{adj1}** that we had to climb through a window.\n\nLanded wrong and hurt my **{bodypart}**, but the show started so I had to **{verb1}** through the pain.\n\n\"**{exclaim}**!\" the band yelled when they saw me bleeding in the front row. **{number}** songs later, I was a legend."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Music Genre", "id": "genre" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Never been into **{genre}** music but my friends dragged me to their concert. The crowd was **{adj1}**.\n\nEveryone started **{verb1}** and I got caught in the middle. Lost a shoe and scraped my **{bodypart}**.\n\n\"**{exclaim}**!\" I screamed, actually having the time of my life. Bought **{number}** merch items I don't need. No regrets!"
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Won a meet-and-greet with **{celebrity}** and showed up looking **{adj1}** because I overslept.\n\nMy **{bodypart}** was sticking out of my shirt and I started to **{verb1}** nervously.\n\n\"**{exclaim}**!\" they laughed. \"You're perfect!\" Turns out they loved the authentic look. **{number}** selfies later, I was on cloud nine."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Band Name", "id": "band" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The acoustic set at **{place}** was supposed to be intimate and **{adj1}**.\n\n**{band}** started playing and I was **{verb1}** so hard my **{bodypart}** hit the person next to me.\n\nThey grabbed my hand and we danced through **{number}** songs together. \"**{exclaim}**!\" we both yelled during the final chorus.\n\nExchanged numbers after. Sometimes the best part of concerts isn't even the music."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Music Genre", "id": "genre" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Backstage pass to the **{genre}** show was **{adj1}** until I actually had to use it.\n\n**{celebrity}** spotted me and **{verb1}** straight toward my **{bodypart}** with a marker.\n\n\"Sign something!\" they demanded. **{number}** people watched me freeze in panic.\n\n\"**{exclaim}**!\" I squeaked, signing their arm instead. They loved it. Posted about it online. I have 47 new followers."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Place", "id": "place" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Festival camping was **{adj1}** and **{adj2}**, exactly as advertised.\n\n3 AM, someone started **{verb1}** outside our tent. My **{bodypart}** peeked out to investigate.\n\n\"**{exclaim}**!\" **{number}** people screamed. Turned out to be a lost raccoon.\n\nWe named it Steve. It followed us to the main stage. Best festival mascot ever."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Music Genre", "id": "genre" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Opera night at **{place}** was NOT what I expected for a **{genre}** fusion show.\n\nThe soprano hit a note so high my **{bodypart}** started vibrating. I **{verb1}** involuntarily.\n\n\"**{exclaim}**!\" the performer pointed at me mid-song. **{number}** people turned to stare.\n\nThey incorporated my noise into the performance. Standing ovation. I'm apparently a musical genius now."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Band Name", "id": "band" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The **{band}** reunion tour was **{adj1}** sold out. Got tickets through a friend of a friend.\n\nMidway through, **{celebrity}** jumped on stage and started **{verb1}** with the band. My **{bodypart}** nearly exploded from excitement.\n\n\"**{exclaim}**!\" **{number}** fans screamed in unison. The impromptu collaboration lasted six songs.\n\nBest surprise in concert history. Still have the recording."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Place", "id": "place" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Street performer at **{place}** looked **{adj1}** enough. Then they started playing.\n\nMy **{bodypart}** started tapping. Then my whole body was **{verb1}** along.\n\n**{number}** people formed a circle. \"**{exclaim}**!\" I yelled when they invited me to dance.\n\nViral video later, I have a dance career. All from one street corner."
+          "template": "Front row. Center stage. The **{band}** concert that would define the rest of my social existence and become the story I tell at every gathering for the foreseeable future. I had camped out for **{number}** hours to secure this spot, endured judgment from security who definitely thought I was too old for this, and spent money I absolutely did not have on this experience that I was convinced would be worth it.\n\nAs the house lights dimmed and the crowd began to roar with the kind of energy that can only come from collective anticipation, I knew every sacrifice had been worth it. The lead singer scanned the front row during the opening song, and somehow, their eyes locked onto mine in a moment of connection that felt destined. They pointed directly at my **{bodypart}** - I was wearing a particularly **{adj1}** shirt that I had specially made for this occasion - and yelled \"YOU! Come on stage!\"\n\nI **{verb1}** in absolute panic as security guards parted the crowd and escorted me up the stairs like I was being arrested for a crime I didn't commit. \"**{exclaim}**!\" the crowd screamed as I was handed a microphone and positioned center stage. I played **{number}** songs with them, my voice cracking, my hands shaking, living every music fan's dream in the most terrifying way possible.\n\nThe videos have millions of views now, and I still get recognized at concerts by people who saw me up there. Sometimes the craziest risks lead to the best rewards."
         }
       ]
     },
@@ -766,122 +218,7 @@
             { "label": "Number", "id": "number" },
             { "label": "Place", "id": "place" }
           ],
-          "template": "So I met this **{adj1}** stranger at the bar and they kept staring at my **{bodypart1}**. Next thing I know, we're at **{place}** and things are getting wild!\n\nThey started **{verb1}** and I couldn't help but moan \"**{exclaim}**!\" Their **{bodypart2}** was everywhere and I was like \"damn, this is some next level stuff!\"\n\nWe went at it for **{number}** hours straight. Best mistake I ever made!"
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Place", "id": "place" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Tinder date seemed **{adj1}** enough. We ended up back at **{place}** and things escalated quickly!\n\nThey started **{verb1}** my **{bodypart}** and I lost it. \"**{exclaim}**!\" echoed through the building.\n\n**{number}** hours later, I realized I never got their name. Classic."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Another Body Part", "id": "bodypart2" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Friends with benefits seemed simple until they started **{verb1}** like THAT.\n\nMy **{bodypart1}** was in the air and my **{bodypart2}** couldn't handle it! \"**{exclaim}**!\" I screamed into the pillow.\n\n**{number}** rounds later and I'm questioning EVERYTHING. This is NOT casual anymore!"
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Place", "id": "place" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "The party was **{adj1}** until I locked eyes with this **{adj2}** stranger across the room. They gestured toward their **{bodypart}** and I knew what was up.\n\nWe snuck into **{place}** and started **{verb1}** immediately. \"**{exclaim}**!\" I yelled, way too loud.\n\nSomeone knocked on the door **{number}** times before we stopped. Totally worth getting caught."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Met them at **{place}** during last call. One look at my **{adj1}** smile and they were hooked.\n\nBack at their place, their **{bodypart1}** found my **{bodypart2}** and things escalated. Started **{verb1}** like there was no tomorrow.\n\n\"**{exclaim}**!\" the neighbors probably heard. **{number}** complaints later and we're still going. Sorry not sorry."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" },
-            { "label": "Place", "id": "place" }
-          ],
-          "template": "Work conference was **{adj1}** boring until the after-party. Someone's hand was on my **{bodypart}** under the table.\n\nTurned out to be the CEO and they wanted to **{verb1}** in the most inappropriate way. \"**{exclaim}**!\" I whispered.\n\n**{place}** closet, **{number}** minutes, best promotion ever. HR would NOT approve."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Place", "id": "place" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The rooftop party was **{adj1}** until the rain started. Everyone rushed inside except us two.\n\nStanding there in the downpour, looking **{adj2}** and soaked, their **{bodypart1}** brushed against my **{bodypart2}**.\n\nOne kiss turned into **{verb1}** against the railing. \"**{exclaim}**!\" I gasped as thunder crashed.\n\n**{number}** people watched from the windows. We didn't care. Best storm of my life."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Gym hookup at **{place}** seemed like a terrible idea. They were too **{adj1}** to be single.\n\nSpotting me on the bench, their hand \"accidentally\" grazed my **{bodypart}**. I **{verb1}** in surprise.\n\n\"Locker room. Now,\" they whispered. **{number}** minutes of the most intense workout ever.\n\n\"**{exclaim}**!\" I groaned afterward. We never spoke about it. Still make eye contact during leg day."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Rebound hookup was supposed to be simple. Just **{adj1}** fun, nothing serious.\n\nBut when their **{bodypart1}** touched my **{bodypart2}**, something shifted. Started **{verb1}** like we'd known each other forever.\n\n\"**{exclaim}**!\" I screamed **{number}** times that night.\n\nMorning came with awkward small talk. They made coffee. We're still friends. Complicated, but good."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Place", "id": "place" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Wedding hookup was risky. **{adj1}** and forbidden. Everyone knew both of us.\n\nDancing together, their hand on my **{bodypart}**, the tension was unbearable. \"**{place}**,\" they whispered. \"Now.\"\n\nI **{verb1}** behind them, heart racing. **{number}** minutes in the coat room.\n\n\"**{exclaim}**!\" the DJ announced our return to the dance floor. Nobody suspected a thing. We still don't talk about it."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Vacation fling was **{adj1}** from the start. We met at the hotel bar, both **{adj2}** and unattached.\n\nTheir **{bodypart1}** against my **{bodypart2}** on the dance floor said everything words couldn't.\n\nStarted **{verb1}** the moment the room door closed. \"**{exclaim}**!\" echoed off the balcony.\n\n**{number}** days of paradise. Exchanged numbers knowing we'd never use them. Perfect while it lasted."
+          "template": "The bar was crowded and loud, the kind of place where you have to lean in close to be heard, where accidental touches are inevitable and easily dismissed as the natural consequence of too many people in too small a space. That's where I first noticed them - standing at the far end of the bar, looking absolutely **{adj1}** in a way that made me forget what I was saying mid-sentence and probably made me look like an idiot. They caught me staring and smiled, and that was essentially the entire courtship because sometimes simplicity is key.\n\nWe talked for maybe twenty minutes, but it felt like both an eternity and no time at all, that strange temporal distortion that happens when you meet someone who immediately captures your attention. Their hand found my **{bodypart1}** under the bar, and I responded by grazing their **{bodypart2}** with my fingers in a way that communicated everything words couldn't. The conversation dried up, replaced by a mutual understanding of where the night was heading without either of us having to say it out loud.\n\n\"My place or yours?\" they asked, cutting straight to the point. We ended up at **{place}**, and things escalated quickly in the way that happens when two people have been dancing around attraction all night. They started **{verb1}** in ways that made me lose all coherent thought and probably said things I'll never be able to take back. \"**{exclaim}**!\" I gasped, probably louder than I intended, and the neighbors definitely heard us based on the complaints we got the next day.\n\nWe went at it for **{number}** hours, losing track of time, of everything except the moment and the connection we had found in a crowded bar. Morning came too soon, with sunlight streaming through windows I didn't remember opening. They left without waking me, just a note with their number on my nightstand. We never did call each other. Some nights are meant to remain singular, perfect in their impermanence."
         },
         {
           "words": [
@@ -892,7 +229,7 @@
             { "label": "Exclamation", "id": "exclaim" },
             { "label": "Number", "id": "number" }
           ],
-          "template": "Library hookup was the quietest and most **{adj1}** experience of my life.\n\nStudying at **{place}**, their foot found my **{bodypart}** under the table. I **{verb1}** silently.\n\n\"Bathroom. Third floor,\" they mouthed. **{number}** stalls down, we lost all composure.\n\n\"**{exclaim}**!\" I barely suppressed. The librarian definitely knew. Worth the detention slip."
+          "template": "The work conference at **{place}** was exactly as exciting as you would expect - endless presentations about quarterly results, lukewarm coffee that tasted like disappointment, and networking sessions that felt more like obligatory suffering than professional development. But the after-party was where things got interesting in ways that would have made HR very concerned if they had known what happened.\n\nThe hotel bar was packed with attendees from every company, all of us relieved to finally relax after days of corporate programming. That's where I met them - someone from a competing firm, **{adj1}** and charming in a way that felt dangerous and exciting. We talked about everything except work, which somehow made the conversation infinitely more interesting and personal.\n\nTheir hand found my **{bodypart}** under the table, and I didn't pull away because sometimes you have to live a little. \"Room?\" they asked. I nodded. What followed was **{number}** hours of the most intense connection I've experienced with another human being. \"**{exclaim}**!\" I gasped at one point, loud enough that I worried about the neighbors and whether they were judging my life choices.\n\nThey **{verb1}** me in ways that made me forget my own name and probably violated several company policies we had both signed. Morning came with awkward small talk and exchanged business cards we both knew we'd never use. We ran into each other at next year's conference. Didn't mention it. Still think about it though, sometimes when I'm supposed to be paying attention to presentations."
         }
       ]
     },
@@ -913,50 +250,7 @@
             { "label": "Number", "id": "number" },
             { "label": "Embarrassing Thing", "id": "embarrass" }
           ],
-          "template": "I woke up in **{place}** with the most **{adj1}** headache of my life. My **{bodypart}** was throbbing and I had no idea how I got there.\n\nLast thing I remember was doing **{number}** shots of **{alcohol}** with my friends. Apparently I started **{verb1}** on a table and yelled \"**{exclaim}**!\" at the top of my lungs!\n\nThen I somehow ended up **{embarrass}**. I'm never drinking again... until next weekend at least."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Woke up with a tattoo that says \"**{exclaim}**!\" and NO memory of getting it.\n\nMy **{bodypart}** hurts and I'm **{verb1}** in someone else's bed. This is **{number}** levels of bad.\n\nTexted my friends: \"**{adj1}** night?\" They replied: \"Legendary. You're never living it down.\""
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Came to at **{place}** surrounded by **{number}** empty bottles. My head felt **{adj1}**.\n\nTried to stand up but my **{bodypart}** gave out and I started to **{verb1}** all over the floor.\n\n\"**{exclaim}**!\" I groaned. Found my phone with 47 missed calls. Mom's NOT happy."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Type of Alcohol", "id": "alcohol" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "The **{adj1}** decision to mix **{alcohol}** with everything else came back to haunt me.\n\nWoke up **{verb1}** in a bathtub full of ice. My **{bodypart}** was numb and my phone was missing.\n\n\"**{exclaim}**!\" I screamed. **{number}** voicemails from my boss. So fired."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "My **{adj1}** hangover included waking up with my **{bodypart1}** stuck in something sticky and my **{bodypart2}** covered in glitter.\n\nTried to **{verb1}** to the bathroom but collapsed halfway there.\n\n\"**{exclaim}**!\" I croaked. Found **{number}** condoms in my pockets. I have a partner. These aren't ours."
+          "template": "Consciousness returned slowly, like surfacing from deep water after being pulled under by a riptide you didn't see coming. My head was pounding with a **{adj1}** rhythm that made me immediately regret every decision that had led to this moment, starting from the first drink and continuing through whatever happened after that. I opened my eyes and found myself in **{place}**, which was confusing because this was definitely not my apartment and I had no memory of leaving my home.\n\nMy **{bodypart}** was throbbing in a way that suggested I had done something profoundly stupid, and I had a vague sense that I should probably check my phone for evidence of what happened. The last clear memory was doing shots of **{alcohol}** with friends at a bar, feeling invincible, feeling like nothing could go wrong because we were young and stupid. How wrong I had been.\n\nI checked my phone with the trepidation of someone opening a bomb disposal kit. **{number}** missed calls. **{number}** texts. One video that I was almost afraid to open but knew I had to watch eventually. It showed me **{verb1}** on a table, yelling \"**{exclaim}**!\" at the top of my lungs while **{embarrass}** in front of what appeared to be several hundred people.\n\nThe video had been viewed 47,000 times. My mother had commented asking if I was okay. I was never drinking again, I swore to myself. (I was drinking again the following weekend because some lessons take longer to learn than others, and I am apparently a slow student.)"
         },
         {
           "words": [
@@ -967,75 +261,7 @@
             { "label": "Exclamation", "id": "exclaim" },
             { "label": "Number", "id": "number" }
           ],
-          "template": "Somehow ended up at **{place}** with no memory of how I got there. Felt **{adj1}**.\n\nMy **{bodypart}** was covered in stamps and I kept **{verb1}** uncontrollably.\n\n\"**{exclaim}**!\" the staff yelled, kicking me out. **{number}** Uber rides home. Never making eye contact with my driver again."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Place", "id": "place" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The group chat photos were **{adj1}** and **{adj2}**. Apparently I convinced **{number}** strangers to follow me to **{place}**.\n\nSecurity footage shows me **{verb1}** with my **{bodypart}** on full display.\n\n\"**{exclaim}**!\" I groaned, deleting the group chat. My reputation is in ruins. At least the stories are good."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Woke up at **{place}** with a note: \"**{celebrity}** says thanks for the karaoke duet.\"\n\nMy **{bodypart}** ached from dancing. Apparently I **{verb1}** on stage for **{number}** songs.\n\n\"**{exclaim}**!\" I whispered. There's video evidence. It has 2 million views. I'm internet famous now."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The photos don't lie. I'm **{adj1}**, holding a cake, with my **{bodypart1}** through someone else's **{bodypart2}**.\n\nCaption: \"Best birthday ever!\" I don't know these people.\n\nStarted **{verb1}** at my phone for **{number}** minutes straight.\n\n\"**{exclaim}**!\" my roommate laughed. \"You did a keg stand on their lawn!\" Adding it to the resume."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Airport security was **{adj1}** until they found whatever was in my **{bodypart}**.\n\nTurns out I'd **{verb1}** something at **{place}** and forgotten. **{number}** officers stared.\n\n\"**{exclaim}**!\" I explained. They laughed, let me go. Missed my flight. Worth the story."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Type of Alcohol", "id": "alcohol" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Place", "id": "place" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The text said \"You challenged **{number}** people to an **{alcohol}** contest at **{place}**.\"\n\nMy **{bodypart}** still hurts from **{verb1}** all night. Feeling **{adj1}** and confused.\n\n\"**{exclaim}**!\" I muttered, reading the rest. I won. Trophy's on the nightstand. No memory of earning it."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Mirror check: **{adj1}** hair, **{bodypart}** covered in writing, no recollection.\n\nGoogle search history: \"can you **{verb1}** in your sleep\" - searched **{number}** times.\n\n\"**{exclaim}**!\" I yelled. The Sharpie won't come off. Permanent reminder to drink water next time."
+          "template": "The first thing I noticed was the tattoo, which was strange because I don't have any tattoos and have been firmly against them my entire life. I was looking at it in the mirror, trying to understand when and why I had made this decision that would be permanent for the rest of my existence. It said \"**{exclaim}**!\" in script across my **{bodypart}**, and I had absolutely no memory of getting it or choosing this particular phrase.\n\nThe skin was still tender, which meant it was recent, probably from last night based on the state of my clothes and the general feeling of my entire being. The second thing I noticed was that I was at **{place}**, which was not my home and I had no idea whose home it was or how I had gotten here.\n\nThe third thing was that I had apparently been **{verb1}** for an extended period based on the state of the room around me. I texted my friends: \"What happened last night?\" The response was immediate and unhelpful: \"Legendary. You're never living it down.\" **{number}** of them sent videos. I watched none of them because some things are better left unknown.\n\nI called the tattoo shop from the aftercare card on my nightstand. They confirmed I had been very insistent about the design and had given a speech about self-expression that apparently moved the artist to tears. I'm keeping it. Some mistakes are too good to undo, and this story is worth the permanent reminder."
         }
       ]
     },
@@ -1056,7 +282,7 @@
             { "label": "Number", "id": "number" },
             { "label": "Insult", "id": "insult" }
           ],
-          "template": "My date started at **{place}** and things seemed **{adj1}** at first. Then they ordered **{food1}** and started **{verb1}** with their mouth open.\n\nI tried to be polite but then they touched my **{bodypart}** without asking! I yelled \"**{exclaim}**!\" and called them a(n) **{insult}**.\n\nThey proceeded to cry for **{number}** minutes straight. I left without paying the bill. 10/10 would not recommend."
+          "template": "My date started at **{place}** and things seemed **{adj1}** at first, which should have been my first warning sign because things are rarely that simple. Then they ordered **{food1}** and started **{verb1}** with their mouth open in a way that made me question whether we had received the same socialization about basic table manners.\n\nI tried to be polite because I had been raised to be respectful even in difficult situations, but then they touched my **{bodypart}** without asking, which crossed a boundary that should never have been approached on a first date. I yelled \"**{exclaim}**!\" and called them a **{insult}** in front of the entire restaurant because sometimes you have to prioritize your dignity over being nice.\n\nThey proceeded to cry for **{number}** minutes straight, which was awkward for everyone involved, especially the waiter who had to keep walking past our table. I left without paying the bill because at that point I considered it compensation for the emotional damage. 10/10 would not recommend this experience to anyone, and I've been single ever since."
         },
         {
           "words": [
@@ -1066,122 +292,7 @@
             { "label": "Exclamation", "id": "exclaim" },
             { "label": "Number", "id": "number" }
           ],
-          "template": "They showed up **{number}** minutes late wearing something... **{adj1}**.\n\nDinner was going okay until they started **{verb1}** at the waiter. My **{bodypart}** cramped from how awkward it got!\n\n\"**{exclaim}**!\" I muttered. They asked for a second date. I blocked their number."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Met at **{place}** for what I thought was a nice dinner. They showed up in an **{adj1}** mood and ordered **{food1}** for the table without asking.\n\nStarted **{verb1}** about their ex while picking at my **{bodypart}** under the table.\n\n\"**{exclaim}**!\" I finally snapped. Left after **{number}** minutes. The food was cold anyway."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Online dating said they were **{adj1}**. They showed up looking... **{adj2}**.\n\nThroughout dinner, they kept **{verb1}** at my **{bodypart}** and making weird comments.\n\n\"**{exclaim}**!\" I hissed when they asked to split the bill AFTER only ordering water. **{number}** blocks home to think about my life choices."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Insult", "id": "insult" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Blind date at **{place}** went south fast. They looked **{adj1}** in the dim lighting.\n\nThen they **{verb1}** at my **{bodypart}** and called me a **{insult}** when I didn't laugh at their joke.\n\n**{number}** seconds later I was gone. Left them with the bill. Hope they enjoyed their solo dinner."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "They suggested **{adj1}** **{food1}** for our date. Should have been a red flag.\n\nHalfway through, they started **{verb1}** with food all over their **{bodypart}**.\n\n\"**{exclaim}**!\" I whispered, mortified. **{number}** people stared. Pretended I didn't know them and left."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Double date at **{place}** seemed safe. Then my friend brought someone **{adj1}** who wouldn't stop **{verb1}**.\n\nTheir date kept staring at my **{bodypart}**. Turns out they were **{celebrity}**'s assistant.\n\n\"**{exclaim}**!\" I yelled when they offered me a job instead of a second date.\n\n**{number}** interviews later, I got the position. Worst date, best career move."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Cooking class date was **{adj1}** until they turned **{adj2}** competitive.\n\nMaking **{food1}**, they **{verb1}** flour all over my **{bodypart}**. \"It's part of the process!\" they claimed.\n\n**{number}** other couples watched us argue. \"**{exclaim}**!\" the instructor yelled.\n\nWe ate our creation in silence. Never saw them again. The recipe was good though."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Type of Animal", "id": "animal" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Petting zoo date at **{place}** was their idea. Seemed **{adj1}** and wholesome.\n\nA **{animal}** bit my **{bodypart}** and they **{verb1}** instead of helping.\n\n\"**{exclaim}**!\" I screamed. **{number}** staff rushed over. They asked if we wanted to reschedule.\n\nI laughed in their face. Some things can't be fixed with a second date."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Movie date started **{adj1}**. Then they put their **{bodypart}** on my leg.\n\nStarted **{verb1}** during the quiet scenes. \"**{exclaim}**!\" I hissed.\n\n**{number}** people shushed us. We got kicked out. They still asked for a second date. The audacity."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Insult", "id": "insult" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Fancy dinner at **{place}** was overpriced and **{adj1}**. The **{food1}** was cold.\n\nThey **{verb1}** at my **{bodypart}** throughout the meal. Called me a **{insult}** when I complained.\n\n**{number}** waiters witnessed the explosion. I got free dessert for the trouble. Small victories."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Place", "id": "place" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Hiking date was **{adj1}** until the **{adj2}** trail got too steep.\n\nMy **{bodypart}** cramped from **{verb1}** uphill. They offered no help.\n\n\"**{exclaim}**!\" I groaned at the summit. **{number}** photos later, they only tagged themselves.\n\nBlocked before we reached the car. Some views aren't worth the company."
+          "template": "They showed up **{number}** minutes late wearing something... **{adj1}** that I still can't quite describe to this day. Dinner was going okay until they started **{verb1}** at the waiter in a way that was both aggressive and inappropriate. My **{bodypart}** cramped from how awkward it got, which is a physical reaction I didn't know was possible before this experience.\n\n\"**{exclaim}**!\" I muttered under my breath when they asked for a second date, which was somehow the most surprising part of the evening. I blocked their number before I got home because some lessons only need to be learned once."
         }
       ]
     },
@@ -1203,7 +314,7 @@
             { "label": "Number", "id": "number" },
             { "label": "Place in Office", "id": "place" }
           ],
-          "template": "It was another boring day at the office until Karen from accounting started **{verb1}** in the break room. Next thing I know, we're in the **{place}** and things are getting heated!\n\nShe pressed her **{bodypart1}** against me while I grabbed her **{bodypart2}**. Someone even brought out a(n) **{office}** - I still don't know how that's relevant!\n\n\"**{exclaim}**!\" she moaned **{number}** times before we heard the boss coming. Worst close call ever!"
+          "template": "It was another boring day at the office until Karen from accounting started **{verb1}** in the break room in a way that definitely violated several HR policies. Next thing I know, we're in the **{place}** and things are getting heated in ways that would make our compliance officer very concerned if they walked in right now.\n\nShe pressed her **{bodypart1}** against me while I grabbed her **{bodypart2}** in a moment of poor judgment that we would both regret if we weren't so caught up in the moment. Someone even brought out a(n) **{office}** - I still don't know how that's relevant or why it seemed like a good idea at the time.\n\n\"**{exclaim}**!\" she moaned **{number}** times before we heard the boss coming down the hallway. Worst close call ever, and we spent the next week avoiding eye contact in meetings while pretending nothing happened."
         },
         {
           "words": [
@@ -1214,124 +325,7 @@
             { "label": "Number", "id": "number" },
             { "label": "Job Title", "id": "job" }
           ],
-          "template": "The work party was **{adj1}** until the **{job}** started **{verb1}** me against the wall.\n\nMy **{bodypart}** was pressed against them and I couldn't think straight. \"**{exclaim}**!\" escaped my lips.\n\n**{number}** people saw us. HR meeting tomorrow. Worth it."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Place in Office", "id": "place" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Late night at the office was **{adj1}** until things got **{adj2}** in the copy room.\n\nTheir **{bodypart1}** brushed against my **{bodypart2}** and suddenly we were **{verb1}** all over the **{place}**.\n\n\"**{exclaim}**!\" I gasped when the lights turned on. **{number}** interns witnessed everything. Promotions all around!"
-        },
-        {
-          "words": [
-            { "label": "Place in Office", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Conference call from **{place}** was going fine until they started **{verb1}** under the table.\n\nMy **{adj1}** reactions were NOT subtle. Clutched my **{bodypart}** to stay quiet.\n\n\"**{exclaim}**!\" almost slipped out. **{number}** coworkers asked if I was okay. The things I do for love."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Job Title", "id": "job" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "My **{job}** has always been **{adj1}** but this was different. Their **{bodypart1}** found my **{bodypart2}** during the team meeting.\n\nStarted **{verb1}** under the conference table while the CEO droned on about quarterly results.\n\n\"**{exclaim}**!\" I barely suppressed. **{number}** people noticed my face. Best meeting ever."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Office Supply", "id": "office" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Office supplies run was **{adj1}** until we got to the storage closet.\n\nThey **{verb1}** me against the shelves and I dropped everything. My **{bodypart}** hit the **{office}** hard.\n\n\"**{exclaim}**!\" I yelped. **{number}** boxes fell on us. Security found us buried under post-it notes. Explaining this to HR tomorrow."
-        },
-        {
-          "words": [
-            { "label": "Place in Office", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Elevator breakdown at **{place}** was **{adj1}** until we were stuck together.\n\nTheir **{bodypart1}** pressed against my **{bodypart2}** in the cramped space. Started **{verb1}** before the lights came back on.\n\n\"**{exclaim}**!\" **{number}** floors worth of tension released. Security found us disheveled. We blamed the heat."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Job Title", "id": "job" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Training session with the **{job}** was **{adj1}** until the role-play exercise.\n\nThey **{verb1}** my **{bodypart}** during the \"trust building\" activity. **{number}** trainees noticed.\n\n\"**{exclaim}**!\" I gasped. Got promoted for \"exceptional engagement.\" The handbook didn't cover this."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Place in Office", "id": "place" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Business trip hotel bar was **{adj1}** and **{adj2}**. Just me and the **{place}** ice machine.\n\nCoworker appeared, **{verb1}** my **{bodypart}** under the table. \"**{exclaim}**!\" I whispered.\n\n**{number}** drinks later, we forgot our room numbers. Housekeeping found us. They didn't report it."
-        },
-        {
-          "words": [
-            { "label": "Place in Office", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Fire drill at **{place}** brought everyone outside. **{adj1}** chaos everywhere.\n\nTheir **{bodypart1}** brushed my **{bodypart2}** in the crowd. They **{verb1}** me toward the stairwell.\n\n\"**{exclaim}**!\" **{number}** minutes of forbidden action. Everyone thought we were helping. We were."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Office Supply", "id": "office" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Inventory day was **{adj1}** boring until we got creative.\n\n**{verb1}** in the supply closet, my **{bodypart}** knocked over an **{office}**.\n\n\"**{exclaim}**!\" **{number}** boxes crashed down. We emerged covered in printer paper. Best inventory ever."
-        },
-        {
-          "words": [
-            { "label": "Job Title", "id": "job" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The new **{job}** was **{adj1}** and knew exactly what they wanted.\n\nTheir **{bodypart1}** found my **{bodypart2}** during the office tour. They **{verb1}** me into the boardroom.\n\n\"**{exclaim}**!\" **{number}** glass walls later, we were visible from everywhere. They locked the blinds. Professional."
+          "template": "The work party was **{adj1}** until the **{job}** started **{verb1}** me against the wall in the coat room where nobody would see us. My **{bodypart}** was pressed against them and I couldn't think straight about the approximately twelve reasons this was a terrible idea.\n\n\"**{exclaim}**!\" escaped my lips before I could stop it. **{number}** people saw us when we emerged, and now there's an HR meeting tomorrow. Worth it, honestly."
         }
       ]
     },
@@ -1352,7 +346,7 @@
             { "label": "Thing You Regret", "id": "regret" },
             { "label": "Animal", "id": "animal" }
           ],
-          "template": "Vegas was **{adj1}** until I woke up married to a(n) **{animal}** with a tattoo that says \"**{exclaim}**!\" on my **{bodypart}**.\n\nApparently I spent **{number}** hours at **{place}**, lost all my money, and started **{verb1}** on the casino floor.\n\nThe worst part? I also **{regret}** and now it's all over the internet. Send help."
+          "template": "Vegas was **{adj1}** until I woke up married to a(n) **{animal}** with a tattoo that says \"**{exclaim}**!\" on my **{bodypart}** in a font that was somehow both elegant and deeply concerning. Apparently I spent **{number}** hours at **{place}**, lost all my money, and started **{verb1}** on the casino floor in front of security cameras that definitely captured everything.\n\nThe worst part? I also **{regret}** and now it's all over the internet because someone filmed it and TikTok exists. Send help, or at least a good lawyer who specializes in unusual marriage situations."
         },
         {
           "words": [
@@ -1362,121 +356,7 @@
             { "label": "Exclamation", "id": "exclaim" },
             { "label": "Number", "id": "number" }
           ],
-          "template": "Came to Vegas single, leaving with... a STRIPPER TATTOO on my **{bodypart}**?!\n\nLast I remember I was **{verb1}** on a table yelling \"**{exclaim}**!\" while betting **{number}** grand.\n\nThis is **{adj1}**. My mom is going to kill me."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "The night started at **{place}** with innocent drinks. Ended with me **{adj1}** and missing clothes.\n\nWoke up with my **{bodypart}** stuck in something and no memory of how I got there.\n\n\"**{exclaim}**!\" I screamed. **{number}** hotel staff stared. They **{verb1}** when I asked what happened. Not asking again."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Place", "id": "place" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Bachelorette party was **{adj1}** until the bride disappeared. Found her at **{place}** looking **{adj2}**.\n\nShe was **{verb1}** while showing off her new **{bodypart}** piercing.\n\n\"**{exclaim}**!\" we all screamed. **{number}** hours and one annulment later, we're still friends. Barely."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Blackjack table was going **{adj1}** until I lost everything. My **{bodypart1}** was shaking.\n\nThe dealer said \"One more bet?\" and I **{verb1}** my **{bodypart2}** on the table as collateral.\n\n\"**{exclaim}**!\" everyone yelled when I won it back. **{number}** security guards escorted me out. Still have the chips though."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Rooftop party at **{place}** seemed like a good idea. The view was **{adj1}**.\n\nThen I started **{verb1}** off the edge and my **{bodypart}** went numb.\n\n\"**{exclaim}**!\" my friends screamed. **{number}** people pulled me back. Best stories come from worst decisions."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Place", "id": "place" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "The chapel was **{adj1}** and **{adj2}**, exactly what we wanted for a quick Vegas wedding.\n\n**{place}** Elvis officiated while my **{bodypart}** shook from nerves. Started **{verb1}** through the vows.\n\n\"**{exclaim}**!\" **{number}** witnesses cheered. Woke up divorced by noon. Record time, honestly."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Pool party at **{place}** was **{adj1}** until **{celebrity}** showed up.\n\nThey **{verb1}** toward my **{bodypart}** with a Sharpie. \"Autograph?\" they asked.\n\n\"**{exclaim}**!\" **{number}** people watched me faint. Woke up on their Instagram. Follower count: 47,000."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "High roller suite was **{adj1}** until the gambling started.\n\nLost **{number}** grand, my **{bodypart1}** was sweating, **{bodypart2}** shaking.\n\nStarted **{verb1}** when security approached. \"**{exclaim}**!\" they laughed. \"Just here for the complimentary breakfast!\""
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Buffet at **{place}** was **{adj1}** unlimited. My **{bodypart}** disagreed.\n\n**{verb1}** through **{number}** plates, I hit my limit.\n\n\"**{exclaim}**!\" the staff yelled, calling medical. IV fluids and shame. Worth every bite."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Place", "id": "place" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Magic show at **{place}** was **{adj1}** until I became the volunteer.\n\n**{adj2}** magician made my **{bodypart}** disappear. Started **{verb1}** in panic.\n\n\"**{exclaim}**!\" **{number}** minutes later, it reappeared. Standing ovation. Still checking it's real."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Helicopter tour over **{place}** was **{adj1}** until the turbulence hit.\n\nMy **{bodypart}** **{verb1}** out the window. **{number}** passengers screamed.\n\n\"**{exclaim}**!\" the pilot laughed. \"Just your hat!\" Still have the photo. Priceless."
+          "template": "Came to Vegas single, leaving with... a STRIPPER TATTOO on my **{bodypart}**?! Last I remember I was **{verb1}** on a table yelling \"**{exclaim}**!\" while betting **{number}** grand on a hand of blackjack I definitely lost.\n\nThis is **{adj1}**. My mom is going to kill me, and honestly, I don't blame her."
         }
       ]
     },
@@ -1498,7 +378,7 @@
             { "label": "Number", "id": "number" },
             { "label": "Place", "id": "place" }
           ],
-          "template": "Met this **{adj1}** stranger at **{place}** and brought them home. Things were going great until they started **{verb1}** and their **{bodypart1}** turned into a **{supernatural}**!\n\nI tried to leave but my **{bodypart2}** was frozen in fear. They whispered \"**{exclaim}**!\" and suddenly we were floating!\n\nBest **{number}** minutes of my life, then I passed out. Woke up alone with bite marks and no number."
+          "template": "Met this **{adj1}** stranger at **{place}** and brought them home, which was my first mistake because I should have learned from horror movies. Things were going great until they started **{verb1}** and their **{bodypart1}** turned into a **{supernatural}** right in front of my eyes.\n\nI tried to leave but my **{bodypart2}** was frozen in fear in a way that felt like a metaphor for something deeper. They whispered \"**{exclaim}**!\" and suddenly we were floating, which was both amazing and deeply concerning.\n\nBest **{number}** minutes of my life, then I passed out from the sheer weirdness of it all. Woke up alone with bite marks and no number, which is somehow the least surprising part of this story."
         },
         {
           "words": [
@@ -1508,123 +388,7 @@
             { "label": "Exclamation", "id": "exclaim" },
             { "label": "Number", "id": "number" }
           ],
-          "template": "They said they were a \"ghost hunter.\" I should have run.\n\nTheir **{adj1}** hands **{verb1}** my **{bodypart}** and the temperature dropped. \"**{exclaim}**!\" I screamed.\n\n**{number}** objects flew across the room. They weren't hunting ghosts. They WERE one."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Haunted house tour at **{place}** was **{adj1}** until the guide's **{bodypart1}** passed through my **{bodypart2}**.\n\nStarted **{verb1}** uncontrollably while the temperature dropped.\n\n\"**{exclaim}**!\" I screamed. **{number}** other tourists saw us merge into one being. Now we're dating. Ghost boyfriend is surprisingly chill."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Supernatural Thing", "id": "supernatural" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Downloaded a **{adj1}** dating app. Their profile was **{adj2}** and too good to be true.\n\nMet up and they **{verb1}** my **{bodypart}** with ice-cold hands. Turned out to be a **{supernatural}**.\n\n\"**{exclaim}**!\" I yelled. **{number}** days later and I'm still questioning reality. Swipe left on dead people."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Séance party was **{adj1}** until the spirits actually showed up. My **{bodypart1}** started glowing.\n\nSomething was **{verb1}** my **{bodypart2}** from the other side.\n\n\"**{exclaim}**!\" the medium screamed. **{number}** demons possessed the group. Best hookup of my afterlife."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Cemetery date at **{place}** seemed romantic in a goth way. They looked **{adj1}** in moonlight.\n\nThen they **{verb1}** into the ground and grabbed my **{bodypart}** from below.\n\n\"**{exclaim}**!\" I shrieked. **{number}** headstones fell over. They never texted back. Guess they're dead to me now."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Vampire club was **{adj1}** and **{adj2}**. Exactly my scene.\n\nTheir **{bodypart1}** pressed against my **{bodypart2}** on the dance floor. Started **{verb1}** near the neck.\n\n\"**{exclaim}**!\" **{number}** puncture wounds later, I'm a regular. Best immortality perk."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Supernatural Thing", "id": "supernatural" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Antique shop at **{place}** had **{adj1}** energy. The mirror **{verb1}** my **{bodypart}**.\n\nA **{supernatural}** emerged, pulling me through. \"**{exclaim}**!\" I gasped.\n\n**{number}** dimensions later, we're married. Reflection looks great."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Werewolf encounter was **{adj1}** until the full moon hit.\n\nTheir **{bodypart1}** transformed while **{verb1}** my **{bodypart2}**.\n\n\"**{exclaim}**!\" **{number}** scratches later, I'm infected. Best condition I've ever had."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Witch's cottage at **{place}** looked **{adj1}** in the listing.\n\nThey **{verb1}** my **{bodypart}** with a spell. \"**{exclaim}**!\" I levitated.\n\n**{number}** potions later, I'm cursed. Best curse ever."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Supernatural Thing", "id": "supernatural" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Alien abduction was **{adj1}** and **{adj2}**. They studied my **{bodypart}**.\n\nStarted **{verb1}** during the examination. A **{supernatural}** hybrid emerged.\n\n\"**{exclaim}**!\" **{number}** light-years from home. Best vacation ever."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Crypt date at **{place}** was **{adj1}** romantic.\n\nTheir **{bodypart1}** against my **{bodypart2}**, they **{verb1}** my soul.\n\n\"**{exclaim}**!\" **{number}** lifetimes later, still together. Death do us part, literally."
+          "template": "They said they were a \"ghost hunter.\" I should have run immediately. Their **{adj1}** hands **{verb1}** my **{bodypart}** and the temperature dropped approximately thirty degrees in seconds.\n\n\"**{exclaim}**!\" I screamed when **{number}** objects flew across the room without being touched. They weren't hunting ghosts. They WERE one, and I was their newest victim."
         }
       ]
     },
@@ -1645,7 +409,7 @@
             { "label": "Place", "id": "place" },
             { "label": "Liquid", "id": "liquid" }
           ],
-          "template": "My friends dared me to eat the spiciest **{food1}** at **{place}**. I thought \"how hard could it be?\" - famous last words!\n\nOne bite and my **{bodypart}** was on fire! I started **{verb1}** around screaming \"**{exclaim}**!\" while chugging **{number}** gallons of **{liquid}**.\n\nSomeone called an ambulance. The paramedics laughed at me for **{adj1}** minutes straight. Worth it for the bragging rights... maybe."
+          "template": "My friends dared me to eat the spiciest **{food1}** at **{place}**, and I thought \"how hard could it be?\" - famous last words that have preceded many bad decisions throughout history. One bite and my **{bodypart}** was on fire in a way that felt metaphorically appropriate for my life choices!\n\nI started **{verb1}** around screaming \"**{exclaim}**!\" while chugging **{number}** gallons of **{liquid}** that did absolutely nothing to help the situation. Someone called an ambulance because they thought I was actually dying.\n\nThe paramedics laughed at me for **{adj1}** minutes straight while treating me for what they called \"self-inflicted stupidity.\" Worth it for the bragging rights... maybe. Still can't eat spicy food."
         },
         {
           "words": [
@@ -1655,125 +419,7 @@
             { "label": "Exclamation", "id": "exclaim" },
             { "label": "Number", "id": "number" }
           ],
-          "template": "\"I can handle ANYTHING\" - famous me before the challenge.\n\n**{number}** seconds in and my **{bodypart}** is MELTING. I'm **{verb1}** everywhere screaming \"**{exclaim}**!\"\n\nThis is **{adj1}** torture. I see heaven. Tell my mom I love her."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Hot wing competition at **{place}** seemed like a good idea. The **{adj1}** **{food1}** looked innocent.\n\nFirst bite and my **{bodypart}** started sweating. Then I was **{verb1}** on the floor.\n\n\"**{exclaim}**!\" I croaked. **{number}** competitors quit. I won by suffering the longest. Trophy tastes like regret."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "The **{adj1}** pepper looked **{adj2}** enough. How wrong I was.\n\nBit into the **{food1}** and my **{bodypart}** immediately started to **{verb1}**.\n\n\"**{exclaim}**!\" I screamed. **{number}** firefighters showed up thinking there was an actual fire. Just my mouth burning."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" },
-            { "label": "Number", "id": "number" }
-          ],
-          "template": "Thought I was **{adj1}** enough to handle the challenge. My **{bodypart1}** disagreed.\n\nStarted **{verb1}** while my **{bodypart2}** turned bright red.\n\n\"**{exclaim}**!\" I gasped between breaths. **{number}** people filmed my suffering. Viral for all the wrong reasons."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Street food vendor at **{place}** warned me the **{food1}** was **{adj1}**.\n\nI insisted. One bite and my **{bodypart}** started to **{verb1}**.\n\n\"**{exclaim}**!\" I yelled in three different languages. Vendor handed me water and laughed. Worth the pain."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Celebrity chef challenge was **{adj1}** until **{celebrity}** handed me the **{adj2}** **{food1}**.\n\n\"It's just a little spicy!\" they winked. My **{bodypart}** started **{verb1}** immediately.\n\n\"**{exclaim}**!\" **{number}** cameras captured my demise. Views: 47 million. Dignity: zero."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Thai restaurant at **{place}** asked \"How spicy?\" I said \"**{adj1}**!\"\n\nMy **{bodypart}** **{verb1}** when the dish arrived. **{number}** napkins later.\n\n\"**{exclaim}**!\" the staff cheered. Free meal for finishing. Hospital bill: not free."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Body Part", "id": "bodypart1" },
-            { "label": "Body Part", "id": "bodypart2" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Ghost pepper **{food1}** was **{adj1}** stupid.\n\n**{bodypart1}** sweating, **{bodypart2}** shaking, **{verb1}** for mercy.\n\n\"**{exclaim}**!\" **{number}** friends laughed instead of helping. New friends needed."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Liquid", "id": "liquid" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Dare at **{place}** was **{adj1}** simple: eat the pepper, win **{number}** dollars.\n\nMy **{bodypart}** was **{verb1}** within seconds. Chugged **{liquid}** like my life depended on it.\n\n\"**{exclaim}**!\" I won the money. Spent it on antacids. Fair trade."
-        },
-        {
-          "words": [
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Adjective", "id": "adj2" },
-            { "label": "Food", "id": "food1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb", "id": "verb1" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Cooking show audition was **{adj1}** until they revealed the **{adj2}** **{food1}**.\n\nMy **{bodypart}** **{verb1}** on camera. **{number}** judges cried from secondhand pain.\n\n\"**{exclaim}**!\" they cast me anyway. Ratings gold. My taste buds: casualties of war."
-        },
-        {
-          "words": [
-            { "label": "Place", "id": "place" },
-            { "label": "Adjective", "id": "adj1" },
-            { "label": "Body Part", "id": "bodypart" },
-            { "label": "Verb (ending in -ing)", "id": "verb1" },
-            { "label": "Famous Person", "id": "celebrity" },
-            { "label": "Number", "id": "number" },
-            { "label": "Exclamation", "id": "exclaim" }
-          ],
-          "template": "Charity event at **{place}** had **{celebrity}** doing the challenge. I volunteered to compete.\n\n**{adj1}** mistake. My **{bodypart}** was **{verb1}** while they barely flinched.\n\n\"**{exclaim}**!\" **{number}** donors laughed. Raised thousands. My mouth: priceless."
+          "template": "\"I can handle ANYTHING\" - famous me before the challenge, displaying the kind of confidence that comes from never having tried anything difficult. **{number}** seconds in and my **{bodypart}** is MELTING off my body. I'm **{verb1}** everywhere screaming \"**{exclaim}**!\" in a way that has alarmed my neighbors.\n\nThis is **{adj1}** torture. I see heaven. Tell my mom I love her and I'm sorry about the car."
         }
       ]
     }
