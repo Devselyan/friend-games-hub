@@ -320,21 +320,27 @@
 
         function toggleNsfwMode() {
             isNsfwMode = !isNsfwMode;
+            console.log('toggleNsfwMode called, isNsfwMode:', isNsfwMode);
+            
             const toggle = document.getElementById('nsfwToggle');
             const naughtyBtn = document.getElementById('naughtyBtn');
             const warning = document.getElementById('nsfwWarning');
             const card = document.getElementById('complimentCard');
+            
+            console.log('Elements found:', { toggle, naughtyBtn, warning, card });
 
             if (isNsfwMode) {
                 toggle.classList.add('nsfw-active');
                 naughtyBtn.style.display = 'block';
                 warning.style.display = 'block';
                 card.classList.add('nsfw-mode');
+                console.log('Naughty mode ENABLED');
             } else {
                 toggle.classList.remove('nsfw-active');
                 naughtyBtn.style.display = 'none';
                 warning.style.display = 'none';
                 card.classList.remove('nsfw-mode');
+                console.log('Naughty mode DISABLED');
                 if (currentCategory === 'naughty') {
                     // Reset to general category and update UI
                     currentCategory = 'general';
