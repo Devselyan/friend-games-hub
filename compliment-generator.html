@@ -240,12 +240,12 @@
 
         <label style="font-weight: 600; color: #333; display: block; margin-bottom: 10px;">Choose Category:</label>
         <div class="category-selector">
-            <button class="category-btn active" onclick="setCategory('general')">✨ General</button>
-            <button class="category-btn" onclick="setCategory('friendship')">🤝 Friendship</button>
-            <button class="category-btn" onclick="setCategory('personality')">🌟 Personality</button>
-            <button class="category-btn" onclick="setCategory('funny')">😄 Funny</button>
-            <button class="category-btn" onclick="setCategory('support')">💪 Support</button>
-            <button class="category-btn nsfw-btn" onclick="setCategory('naughty')" style="display: none;" id="naughtyBtn">🌶️ Naughty</button>
+            <button class="category-btn active" onclick="setCategory('general', this)">✨ General</button>
+            <button class="category-btn" onclick="setCategory('friendship', this)">🤝 Friendship</button>
+            <button class="category-btn" onclick="setCategory('personality', this)">🌟 Personality</button>
+            <button class="category-btn" onclick="setCategory('funny', this)">😄 Funny</button>
+            <button class="category-btn" onclick="setCategory('support', this)">💪 Support</button>
+            <button class="category-btn nsfw-btn" onclick="setCategory('naughty', this)" style="display: none;" id="naughtyBtn">🌶️ Naughty</button>
         </div>
 
         <button class="btn generate-btn" onclick="generateCompliment()">Generate Compliment</button>
@@ -290,12 +290,14 @@
         // Load data on page load
         loadData();
 
-        function setCategory(category) {
+        function setCategory(category, btnElement) {
             currentCategory = category;
             document.querySelectorAll('.category-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
-            event.target.classList.add('active');
+            if (btnElement) {
+                btnElement.classList.add('active');
+            }
         }
 
         function toggleRoastMode() {
@@ -322,7 +324,7 @@
             const naughtyBtn = document.getElementById('naughtyBtn');
             const warning = document.getElementById('nsfwWarning');
             const card = document.getElementById('complimentCard');
-            
+
             if (isNsfwMode) {
                 toggle.classList.add('nsfw-active');
                 naughtyBtn.style.display = 'block';
@@ -334,7 +336,12 @@
                 warning.style.display = 'none';
                 card.classList.remove('nsfw-mode');
                 if (currentCategory === 'naughty') {
-                    setCategory('general');
+                    // Reset to general category and update UI
+                    currentCategory = 'general';
+                    document.querySelectorAll('.category-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    document.querySelector('.category-btn').classList.add('active');
                 }
             }
         }
