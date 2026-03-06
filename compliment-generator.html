@@ -77,6 +77,10 @@
             background: linear-gradient(135deg, #8E0E00 0%, #1F1C18 100%);
         }
 
+        .hidden {
+            display: none !important;
+        }
+
         .toggle-container {
             display: flex;
             gap: 20px;
@@ -234,7 +238,7 @@
             </div>
         </div>
 
-        <div id="nsfwWarning" class="warning-label" style="display: none;">
+        <div id="nsfwWarning" class="warning-label hidden">
             ⚠️ <strong>18+ Content:</strong> Naughty mode contains adult humor. Use responsibly!
         </div>
 
@@ -245,7 +249,7 @@
             <button class="category-btn" onclick="setCategory('personality', this)">🌟 Personality</button>
             <button class="category-btn" onclick="setCategory('funny', this)">😄 Funny</button>
             <button class="category-btn" onclick="setCategory('support', this)">💪 Support</button>
-            <button class="category-btn nsfw-btn" onclick="setCategory('naughty', this)" style="display: none;" id="naughtyBtn">🌶️ Naughty</button>
+            <button class="category-btn nsfw-btn hidden" onclick="setCategory('naughty', this)" id="naughtyBtn">🌶️ Naughty</button>
         </div>
 
         <button class="btn generate-btn" onclick="generateCompliment()">Generate Compliment</button>
@@ -321,24 +325,24 @@
         function toggleNsfwMode() {
             isNsfwMode = !isNsfwMode;
             console.log('toggleNsfwMode called, isNsfwMode:', isNsfwMode);
-            
+
             const toggle = document.getElementById('nsfwToggle');
             const naughtyBtn = document.getElementById('naughtyBtn');
             const warning = document.getElementById('nsfwWarning');
             const card = document.getElementById('complimentCard');
-            
+
             console.log('Elements found:', { toggle, naughtyBtn, warning, card });
 
             if (isNsfwMode) {
                 toggle.classList.add('nsfw-active');
-                naughtyBtn.style.display = 'block';
-                warning.style.display = 'block';
+                naughtyBtn.classList.remove('hidden');
+                warning.classList.remove('hidden');
                 card.classList.add('nsfw-mode');
                 console.log('Naughty mode ENABLED');
             } else {
                 toggle.classList.remove('nsfw-active');
-                naughtyBtn.style.display = 'none';
-                warning.style.display = 'none';
+                naughtyBtn.classList.add('hidden');
+                warning.classList.add('hidden');
                 card.classList.remove('nsfw-mode');
                 console.log('Naughty mode DISABLED');
                 if (currentCategory === 'naughty') {
