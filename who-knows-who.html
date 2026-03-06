@@ -56,6 +56,18 @@
             border-color: #764ba2;
         }
 
+        .option-btn.correct {
+            background: #28a745 !important;
+            color: white !important;
+            border-color: #28a745 !important;
+        }
+
+        .option-btn.wrong {
+            background: #dc3545 !important;
+            color: white !important;
+            border-color: #dc3545 !important;
+        }
+
         .results-section {
             display: none;
             text-align: center;
@@ -73,17 +85,25 @@
             padding: 20px;
             border-radius: 15px;
             margin: 20px 0;
+            text-align: left;
         }
 
         .score-item {
             display: flex;
             justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #e0e0e0;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
         }
 
-        .score-item:last-child {
-            border-bottom: none;
+        .score-item.correct {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+        }
+
+        .score-item.wrong {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
         }
 
         .winner-announcement {
@@ -97,6 +117,47 @@
             text-align: center;
             color: #666;
             margin-bottom: 10px;
+        }
+
+        .phase-indicator {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .feedback-text {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .feedback-correct {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .feedback-wrong {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .answer-reveal {
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border: 2px solid #007bff;
+        }
+
+        .answer-reveal strong {
+            color: #007bff;
         }
     </style>
 </head>
@@ -124,35 +185,34 @@
 
         <!-- Quiz Section -->
         <div id="quizSection" class="quiz-section">
+            <div class="phase-indicator" id="phaseIndicator">Phase 1: Player 1 answers about themselves</div>
             <div class="progress-indicator" id="progressIndicator">Question 1 of 10</div>
-            
+
             <div class="question-card">
                 <div class="question-text" id="questionText"></div>
                 <div class="options-container" id="optionsContainer"></div>
             </div>
 
+            <div class="feedback-text" id="feedbackText" style="display: none;"></div>
+            
+            <div class="answer-reveal" id="answerReveal" style="display: none;">
+                <strong id="revealText"></strong>
+            </div>
+
             <button class="btn" onclick="submitAnswer()" id="submitBtn" style="display: none;">Submit Answer</button>
-            <button class="btn" onclick="nextQuestion()" id="nextBtn" style="display: none;">Next Question</button>
+            <button class="btn" onclick="nextQuestion()" id="nextBtn" style="display: none;">Continue</button>
         </div>
 
         <!-- Results Section -->
         <div id="resultsSection" class="quiz-section results-section">
             <h2>Quiz Complete!</h2>
             <div class="winner-announcement" id="winnerAnnouncement"></div>
-            
-            <div class="score-breakdown">
-                <div class="score-item">
-                    <span id="player1Name">Player 1</span>
-                    <span id="player1Score">0/10</span>
-                </div>
-                <div class="score-item">
-                    <span id="player2Name">Player 2</span>
-                    <span id="player2Score">0/10</span>
-                </div>
-            </div>
 
             <div class="score-display" id="finalScore"></div>
-            <p id="resultMessage"></p>
+            <p id="resultMessage" style="color: #666; margin: 20px 0;"></p>
+
+            <h3 style="color: #764ba2; margin: 20px 0 15px;">Question Breakdown:</h3>
+            <div class="score-breakdown" id="scoreBreakdown"></div>
 
             <button class="btn" onclick="resetGame()" style="margin-top: 20px;">Play Again</button>
         </div>
@@ -161,53 +221,52 @@
     <script>
         const questions = [
             {
-                question: "What is their favorite hobby?",
+                question: "What is your favorite hobby?",
                 options: ["Sports", "Reading", "Gaming", "Music", "Cooking", "Travel"]
             },
             {
-                question: "What's their favorite food?",
+                question: "What's your favorite food?",
                 options: ["Pizza", "Pasta", "Sushi", "Burgers", "Tacos", "Salad"]
             },
             {
-                question: "What type of movies do they prefer?",
+                question: "What type of movies do you prefer?",
                 options: ["Action", "Comedy", "Drama", "Horror", "Sci-Fi", "Romance"]
             },
             {
-                question: "What's their ideal weekend?",
+                question: "What's your ideal weekend?",
                 options: ["Partying", "Relaxing at home", "Outdoor adventure", "Shopping", "Watching movies", "Meeting friends"]
             },
             {
-                question: "What's their favorite season?",
+                question: "What's your favorite season?",
                 options: ["Spring", "Summer", "Fall", "Winter"]
             },
             {
-                question: "What's their go-to drink?",
+                question: "What's your go-to drink?",
                 options: ["Coffee", "Tea", "Juice", "Water", "Soda", "Smoothie"]
             },
             {
-                question: "What's their favorite color?",
+                question: "What's your favorite color?",
                 options: ["Blue", "Red", "Green", "Purple", "Black", "White"]
             },
             {
-                question: "How do they spend free time?",
+                question: "How do you spend your free time?",
                 options: ["Social media", "Exercise", "Reading", "Gaming", "Watching TV", "Hanging with friends"]
             },
             {
-                question: "What's their personality type?",
+                question: "What's your personality type?",
                 options: ["Outgoing", "Reserved", "Adventurous", "Calm", "Funny", "Serious"]
             },
             {
-                question: "What's their dream destination?",
+                question: "What's your dream destination?",
                 options: ["Beach", "Mountains", "Big city", "Countryside", "Foreign country", "Staycation"]
             }
         ];
 
         let currentQuestion = 0;
         let player1Answers = [];
-        let player2Answers = [];
-        let player1Score = 0;
+        let player2Guesses = [];
         let player2Score = 0;
-        let currentPlayer = 1;
+        let phase = 1;
         let selectedOption = null;
 
         function startGame() {
@@ -221,28 +280,44 @@
 
             document.getElementById('setupSection').classList.remove('active');
             document.getElementById('quizSection').classList.add('active');
-            
+
             player1Answers = [];
-            player2Answers = [];
-            player1Score = 0;
+            player2Guesses = [];
             player2Score = 0;
             currentQuestion = 0;
-            currentPlayer = 1;
-            
+            phase = 1;
+
+            updatePhaseIndicator();
             loadQuestion();
+        }
+
+        function updatePhaseIndicator() {
+            const name1 = document.getElementById('name1').value.trim();
+            const name2 = document.getElementById('name2').value.trim();
+
+            if (phase === 1) {
+                document.getElementById('phaseIndicator').textContent = `Phase 1: ${name1} answers about themselves`;
+            } else {
+                document.getElementById('phaseIndicator').textContent = `Phase 2: ${name2} guesses ${name1}'s answers`;
+            }
         }
 
         function loadQuestion() {
             const q = questions[currentQuestion];
             const name1 = document.getElementById('name1').value.trim();
             const name2 = document.getElementById('name2').value.trim();
-            
-            document.getElementById('progressIndicator').textContent = `Question ${currentQuestion + 1} of 10 - ${currentPlayer === 1 ? name1 : name2}'s turn`;
-            document.getElementById('questionText').textContent = `For ${currentPlayer === 1 ? name2 : name1}: ${q.question}`;
-            
+
+            document.getElementById('progressIndicator').textContent = `Question ${currentQuestion + 1} of ${questions.length}`;
+
+            if (phase === 1) {
+                document.getElementById('questionText').textContent = `${name1}: ${q.question}`;
+            } else {
+                document.getElementById('questionText').textContent = `${name2}: What did ${name1} choose for this question?`;
+            }
+
             const optionsContainer = document.getElementById('optionsContainer');
             optionsContainer.innerHTML = '';
-            
+
             q.options.forEach((option, index) => {
                 const btn = document.createElement('button');
                 btn.className = 'option-btn';
@@ -254,9 +329,18 @@
             selectedOption = null;
             document.getElementById('submitBtn').style.display = 'block';
             document.getElementById('nextBtn').style.display = 'none';
+            document.getElementById('feedbackText').style.display = 'none';
+            document.getElementById('answerReveal').style.display = 'none';
+
+            // Disable options after selection in phase 2
+            if (phase === 2) {
+                optionsContainer.style.pointerEvents = 'none';
+            }
         }
 
         function selectOption(index, btn) {
+            if (phase === 2) return; // Can't change answer in phase 2
+
             document.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
             btn.classList.add('selected');
             selectedOption = index;
@@ -268,37 +352,74 @@
                 return;
             }
 
-            if (currentPlayer === 1) {
+            if (phase === 1) {
+                // Phase 1: Player 1 answers about themselves
                 player1Answers.push(selectedOption);
+                
+                // Show confirmation and move to next
+                document.getElementById('submitBtn').style.display = 'none';
+                document.getElementById('nextBtn').style.display = 'block';
+                document.getElementById('nextBtn').textContent = 'Next Question';
+                
+                // Clear selection for next question
+                document.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+                selectedOption = null;
             } else {
-                player2Answers.push(selectedOption);
-            }
+                // Phase 2: Player 2 guesses, then reveal if correct
+                player2Guesses.push(selectedOption);
+                
+                const correctAnswer = player1Answers[currentQuestion];
+                const isCorrect = selectedOption === correctAnswer;
+                
+                if (isCorrect) {
+                    player2Score++;
+                }
 
-            document.getElementById('submitBtn').style.display = 'none';
-            document.getElementById('nextBtn').style.display = 'block';
+                // Highlight correct and wrong answers
+                const options = document.querySelectorAll('.option-btn');
+                options[correctAnswer].classList.add('correct');
+                if (!isCorrect) {
+                    options[selectedOption].classList.add('wrong');
+                }
+
+                // Show feedback
+                const name1 = document.getElementById('name1').value.trim();
+                const name2 = document.getElementById('name2').value.trim();
+                const feedbackEl = document.getElementById('feedbackText');
+                
+                feedbackEl.style.display = 'block';
+                feedbackEl.className = 'feedback-text ' + (isCorrect ? 'feedback-correct' : 'feedback-wrong');
+                feedbackEl.textContent = isCorrect 
+                    ? `✅ Correct! ${name2} knows ${name1} well!` 
+                    : `❌ Wrong! ${name1} chose "${questions[currentQuestion].options[correctAnswer]}"`;
+
+                document.getElementById('revealText').textContent = `${name1}'s answer: ${questions[currentQuestion].options[correctAnswer]}`;
+                document.getElementById('answerReveal').style.display = 'block';
+
+                document.getElementById('submitBtn').style.display = 'none';
+                document.getElementById('nextBtn').style.display = 'block';
+                document.getElementById('nextBtn').textContent = currentQuestion === questions.length - 1 ? 'See Results' : 'Next Question';
+            }
         }
 
         function nextQuestion() {
             currentQuestion++;
-            
+
             if (currentQuestion >= questions.length) {
-                calculateScores();
-                showResults();
+                if (phase === 1) {
+                    // Move to phase 2
+                    phase = 2;
+                    currentQuestion = 0;
+                    updatePhaseIndicator();
+                    loadQuestion();
+                } else {
+                    // Show results
+                    showResults();
+                }
                 return;
             }
 
-            // Switch player
-            currentPlayer = currentPlayer === 1 ? 2 : 1;
             loadQuestion();
-        }
-
-        function calculateScores() {
-            for (let i = 0; i < questions.length; i++) {
-                if (player1Answers[i] === player2Answers[i]) {
-                    player1Score++;
-                    player2Score++;
-                }
-            }
         }
 
         function showResults() {
@@ -308,25 +429,45 @@
             const name1 = document.getElementById('name1').value.trim();
             const name2 = document.getElementById('name2').value.trim();
 
-            document.getElementById('player1Name').textContent = name1;
-            document.getElementById('player2Name').textContent = name2;
-            document.getElementById('player1Score').textContent = `${player1Score}/${questions.length}`;
-            document.getElementById('player2Score').textContent = `${player2Score}/${questions.length}`;
+            const percentage = Math.round((player2Score / questions.length) * 100);
+            
+            document.getElementById('finalScore').textContent = `${player2Score}/${questions.length} (${percentage}%)`;
 
             let winnerText = '';
-            if (player1Score > player2Score) {
-                winnerText = `🎉 ${name1} knows ${name2} better!`;
-            } else if (player2Score > player1Score) {
-                winnerText = `🎉 ${name2} knows ${name1} better!`;
+            let resultMessage = '';
+            
+            if (percentage >= 80) {
+                winnerText = `🎉 ${name2} knows ${name1} REALLY well!`;
+                resultMessage = `Amazing! ${name2} got ${player2Score} out of ${questions.length} correct! You two must be best friends!`;
+            } else if (percentage >= 60) {
+                winnerText = `😊 ${name2} knows ${name1} pretty well!`;
+                resultMessage = `Good job! ${name2} got ${player2Score} out of ${questions.length} correct. There's still more to learn about each other!`;
+            } else if (percentage >= 40) {
+                winnerText = `🤔 ${name2} is getting to know ${name1}...`;
+                resultMessage = `Not bad! ${name2} got ${player2Score} out of ${questions.length} correct. Keep spending time together!`;
             } else {
-                winnerText = `🤝 It's a tie! You both know each other equally well!`;
+                winnerText = `😅 ${name2} has a lot to learn about ${name1}!`;
+                resultMessage = `Oops! ${name2} only got ${player2Score} out of ${questions.length} correct. Time for more hangouts!`;
             }
 
             document.getElementById('winnerAnnouncement').textContent = winnerText;
-            document.getElementById('finalScore').textContent = `${player1Score} - ${player2Score}`;
-            
-            const matchPercent = Math.round((player1Score / questions.length) * 100);
-            document.getElementById('resultMessage').textContent = `You both matched on ${matchPercent}% of answers!`;
+            document.getElementById('resultMessage').textContent = resultMessage;
+
+            // Build breakdown
+            let breakdownHtml = '';
+            questions.forEach((q, i) => {
+                const isCorrect = player2Guesses[i] === player1Answers[i];
+                breakdownHtml += `
+                    <div class="score-item ${isCorrect ? 'correct' : 'wrong'}">
+                        <span style="flex: 2;"><strong>Q${i+1}:</strong> ${q.question}</span>
+                        <span style="flex: 1; font-size: 0.85rem;">${name1}: ${q.options[player1Answers[i]]}</span>
+                        <span style="flex: 1; font-size: 0.85rem;">${name2}: ${q.options[player2Guesses[i]]}</span>
+                        <span>${isCorrect ? '✅' : '❌'}</span>
+                    </div>
+                `;
+            });
+
+            document.getElementById('scoreBreakdown').innerHTML = breakdownHtml;
         }
 
         function resetGame() {
