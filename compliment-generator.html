@@ -21,6 +21,14 @@
             transition: transform 0.3s;
         }
 
+        .compliment-card.roast-mode {
+            background: linear-gradient(135deg, #434343 0%, #000000 100%);
+        }
+
+        .compliment-card.nsfw-mode {
+            background: linear-gradient(135deg, #8E0E00 0%, #1F1C18 100%);
+        }
+
         .compliment-card:hover {
             transform: scale(1.02);
         }
@@ -63,6 +71,68 @@
         .category-btn.active {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             color: white;
+        }
+
+        .category-btn.nsfw-btn.active {
+            background: linear-gradient(135deg, #8E0E00 0%, #1F1C18 100%);
+        }
+
+        .toggle-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .toggle-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #f0f0f0;
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 50px;
+            height: 26px;
+            background: #ccc;
+            border-radius: 13px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .toggle-switch.active {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .toggle-switch.nsfw-active {
+            background: linear-gradient(135deg, #8E0E00 0%, #1F1C18 100%);
+        }
+
+        .toggle-switch::after {
+            content: '';
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            background: white;
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+        }
+
+        .toggle-switch.active::after,
+        .toggle-switch.nsfw-active::after {
+            transform: translateX(24px);
+        }
+
+        .toggle-label {
+            font-weight: 600;
+            color: #333;
+            font-size: 0.9rem;
         }
 
         .action-row {
@@ -123,6 +193,22 @@
                 transform: translateY(-100px) scale(1.5);
             }
         }
+
+        .warning-label {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            color: #856404;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -137,6 +223,21 @@
             <input type="text" id="friendName" placeholder="Enter your friend's name">
         </div>
 
+        <div class="toggle-container">
+            <div class="toggle-wrapper">
+                <div class="toggle-switch" id="roastToggle" onclick="toggleRoastMode()"></div>
+                <span class="toggle-label">🔥 Roast Mode</span>
+            </div>
+            <div class="toggle-wrapper">
+                <div class="toggle-switch" id="nsfwToggle" onclick="toggleNsfwMode()"></div>
+                <span class="toggle-label">🌶️ Naughty Mode</span>
+            </div>
+        </div>
+
+        <div id="nsfwWarning" class="warning-label" style="display: none;">
+            ⚠️ <strong>18+ Content:</strong> Naughty mode contains adult humor. Use responsibly!
+        </div>
+
         <label style="font-weight: 600; color: #333; display: block; margin-bottom: 10px;">Choose Category:</label>
         <div class="category-selector">
             <button class="category-btn active" onclick="setCategory('general')">✨ General</button>
@@ -144,6 +245,7 @@
             <button class="category-btn" onclick="setCategory('personality')">🌟 Personality</button>
             <button class="category-btn" onclick="setCategory('funny')">😄 Funny</button>
             <button class="category-btn" onclick="setCategory('support')">💪 Support</button>
+            <button class="category-btn nsfw-btn" onclick="setCategory('naughty')" style="display: none;" id="naughtyBtn">🌶️ Naughty</button>
         </div>
 
         <button class="btn generate-btn" onclick="generateCompliment()">Generate Compliment</button>
@@ -164,96 +266,111 @@
 
     <script>
         let currentCategory = 'general';
+        let isRoastMode = false;
+        let isNsfwMode = false;
+        let compliments = {};
+        let roasts = {};
+        let dataLoaded = false;
 
-        const compliments = {
-            general: [
-                { text: "You bring so much joy to everyone around you!", emoji: "🌟" },
-                { text: "Your positive energy is absolutely contagious!", emoji: "✨" },
-                { text: "You have a heart of gold and it shows in everything you do!", emoji: "💖" },
-                { text: "The world is a better place with you in it!", emoji: "🌍" },
-                { text: "You're capable of amazing things!", emoji: "⭐" },
-                { text: "Your smile can light up the darkest room!", emoji: "😊" },
-                { text: "You have such a beautiful soul!", emoji: "🦋" },
-                { text: "Your kindness makes a difference every single day!", emoji: "💕" },
-                { text: "You're stronger than you know and braver than you believe!", emoji: "🦁" },
-                { text: "Your unique perspective makes the world more interesting!", emoji: "🎨" }
-            ],
-            friendship: [
-                { text: "You're the kind of friend everyone wishes they had!", emoji: "🤝" },
-                { text: "Our friendship is one of my life's greatest treasures!", emoji: "💎" },
-                { text: "You always know how to make me laugh, even on the worst days!", emoji: "😂" },
-                { text: "I'm so grateful to have a friend as loyal as you!", emoji: "🐕" },
-                { text: "You're not just a friend, you're family!", emoji: "👨‍👩‍👧" },
-                { text: "Thank you for always being there, no matter what!", emoji: "🙏" },
-                { text: "You make every adventure more fun!", emoji: "🎉" },
-                { text: "Having you as a friend is like having a built-in cheerleader!", emoji: "📣" },
-                { text: "You're the peanut butter to my jelly!", emoji: "🥜" },
-                { text: "Friends like you are harder to find than a four-leaf clover!", emoji: "🍀" }
-            ],
-            personality: [
-                { text: "Your creativity knows no bounds!", emoji: "🎨" },
-                { text: "You have the most wonderful sense of humor!", emoji: "😄" },
-                { text: "Your intelligence is inspiring!", emoji: "🧠" },
-                { text: "You're so thoughtful and considerate!", emoji: "💭" },
-                { text: "Your passion for life is truly motivating!", emoji: "🔥" },
-                { text: "You have such a warm and welcoming presence!", emoji: "🏠" },
-                { text: "Your honesty is refreshing and admirable!", emoji: "💯" },
-                { text: "You're incredibly resilient and that's amazing!", emoji: "💪" },
-                { text: "Your curiosity makes you endlessly interesting!", emoji: "🔍" },
-                { text: "You have a natural gift for making others feel valued!", emoji: "🎁" }
-            ],
-            funny: [
-                { text: "You're like a human version of a golden retriever - everyone loves you!", emoji: "🐕" },
-                { text: "You're proof that awesome people actually exist!", emoji: "🦄" },
-                { text: "If you were a vegetable, you'd be a cute-cumber!", emoji: "🥒" },
-                { text: "You're more fun than a barrel of monkeys... and way cuter!", emoji: "🐒" },
-                { text: "You're the sprinkles on my donut!", emoji: "🍩" },
-                { text: "You're like WiFi for my soul - you just get me!", emoji: "📶" },
-                { text: "You're cooler than the other side of the pillow!", emoji: "🛏️" },
-                { text: "You're basically a superhero, but with better snacks!", emoji: "🦸" },
-                { text: "You're the reason I smile at my phone like an idiot!", emoji: "📱" },
-                { text: "You're more refreshing than a cold drink on a hot day!", emoji: "🥤" }
-            ],
-            support: [
-                { text: "I believe in you, even when you don't believe in yourself!", emoji: "💪" },
-                { text: "You've got this, and I've got you!", emoji: "🤗" },
-                { text: "Every challenge is just an opportunity for you to shine!", emoji: "⭐" },
-                { text: "You're handling this with so much grace and strength!", emoji: "🌸" },
-                { text: "Remember: you've survived 100% of your bad days so far!", emoji: "📊" },
-                { text: "Your comeback is going to be legendary!", emoji: "🏆" },
-                { text: "This tough time doesn't define you - your resilience does!", emoji: "💎" },
-                { text: "You're growing stronger with every challenge!", emoji: "🌱" },
-                { text: "I'm so proud of how far you've come!", emoji: "🎊" },
-                { text: "Better days are coming, and you'll be ready for them!", emoji: "🌅" }
-            ]
-        };
+        // Load data from JSON file
+        async function loadData() {
+            try {
+                const response = await fetch('compliments-data.json');
+                const data = await response.json();
+                compliments = data.compliments;
+                roasts = data.roasts;
+                dataLoaded = true;
+                console.log('Data loaded successfully!');
+            } catch (error) {
+                console.error('Error loading data:', error);
+                alert('Failed to load compliments data. Please refresh the page.');
+            }
+        }
+
+        // Load data on page load
+        loadData();
 
         function setCategory(category) {
             currentCategory = category;
             document.querySelectorAll('.category-btn').forEach(btn => {
-                btn.classList.toggle('active', btn.onclick.toString().includes(category));
+                btn.classList.remove('active');
             });
+            event.target.classList.add('active');
+        }
+
+        function toggleRoastMode() {
+            isRoastMode = !isRoastMode;
+            const toggle = document.getElementById('roastToggle');
+            const card = document.getElementById('complimentCard');
+            
+            if (isRoastMode) {
+                toggle.classList.add('active');
+                card.classList.add('roast-mode');
+                document.querySelector('h1').textContent = '🔥 Roast Generator';
+                document.querySelector('.subtitle').textContent = 'Brace yourself for brutal honesty!';
+            } else {
+                toggle.classList.remove('active');
+                card.classList.remove('roast-mode');
+                document.querySelector('h1').textContent = '💬 Compliment Generator';
+                document.querySelector('.subtitle').textContent = 'Spread positivity with heartfelt compliments!';
+            }
+        }
+
+        function toggleNsfwMode() {
+            isNsfwMode = !isNsfwMode;
+            const toggle = document.getElementById('nsfwToggle');
+            const naughtyBtn = document.getElementById('naughtyBtn');
+            const warning = document.getElementById('nsfwWarning');
+            const card = document.getElementById('complimentCard');
+            
+            if (isNsfwMode) {
+                toggle.classList.add('nsfw-active');
+                naughtyBtn.style.display = 'block';
+                warning.style.display = 'block';
+                card.classList.add('nsfw-mode');
+            } else {
+                toggle.classList.remove('nsfw-active');
+                naughtyBtn.style.display = 'none';
+                warning.style.display = 'none';
+                card.classList.remove('nsfw-mode');
+                if (currentCategory === 'naughty') {
+                    setCategory('general');
+                }
+            }
         }
 
         function generateCompliment() {
-            const friendName = document.getElementById('friendName').value.trim() || 'You';
-            const categoryCompliments = compliments[currentCategory];
-            const randomCompliment = categoryCompliments[Math.floor(Math.random() * categoryCompliments.length)];
+            if (!dataLoaded) {
+                alert('Loading content... please try again in a moment.');
+                return;
+            }
 
-            document.getElementById('complimentEmoji').textContent = randomCompliment.emoji;
-            document.getElementById('complimentText').textContent = randomCompliment.text;
-            document.getElementById('complimentName').textContent = `— ${friendName}`;
-            
+            const friendName = document.getElementById('friendName').value.trim() || 'You';
+            const sourceData = isRoastMode ? roasts : compliments;
+            const categoryData = sourceData[currentCategory];
+            const randomItem = categoryData[Math.floor(Math.random() * categoryData.length)];
+
+            // Replace {name} placeholder with actual name
+            let text = randomItem.text.replace(/{name}/g, friendName);
+
+            document.getElementById('complimentEmoji').textContent = randomItem.emoji;
+            document.getElementById('complimentText').textContent = text;
+            document.getElementById('complimentName').textContent = isRoastMode ? `🔥 Roasted: ${friendName}` : `✨ For: ${friendName}`;
+
             document.getElementById('complimentCard').style.display = 'flex';
             document.getElementById('actionRow').style.display = 'flex';
 
-            createFloatingHearts();
+            if (!isRoastMode && !isNsfwMode) {
+                createFloatingHearts();
+            } else if (isRoastMode) {
+                createFloatingFire();
+            }
         }
 
         function copyCompliment() {
             const text = `${document.getElementById('complimentText').textContent} ${document.getElementById('complimentName').textContent}`;
             navigator.clipboard.writeText(text).then(() => {
-                alert('Compliment copied! Share the positivity! 💖');
+                alert(isRoastMode ? 'Roast copied! Share the burn! 🔥' : 'Compliment copied! Share the positivity! 💖');
             });
         }
 
@@ -271,6 +388,23 @@
                 container.appendChild(heart);
 
                 setTimeout(() => heart.remove(), 2000);
+            }
+        }
+
+        function createFloatingFire() {
+            const container = document.getElementById('floatingHearts');
+            container.innerHTML = '';
+
+            for (let i = 0; i < 10; i++) {
+                const fire = document.createElement('div');
+                fire.className = 'heart';
+                fire.textContent = ['🔥', '💀', '⚠️', '🌶️', '😈'][Math.floor(Math.random() * 5)];
+                fire.style.left = Math.random() * 100 + 'vw';
+                fire.style.top = Math.random() * 50 + 50 + 'vh';
+                fire.style.animationDelay = Math.random() * 0.5 + 's';
+                container.appendChild(fire);
+
+                setTimeout(() => fire.remove(), 2000);
             }
         }
     </script>
