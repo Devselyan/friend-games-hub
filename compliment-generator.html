@@ -18,7 +18,14 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            transition: transform 0.3s;
+            transition: transform 0.3s, background 0.5s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .compliment-card.show {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         .compliment-card.roast-mode {
@@ -26,24 +33,37 @@
         }
 
         .compliment-card:hover {
-            transform: scale(1.02);
+            transform: scale(1.02) translateY(0);
         }
 
         .compliment-emoji {
             font-size: 4rem;
             margin-bottom: 20px;
+            animation: bounce 0.6s ease;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
         }
 
         .compliment-text {
             font-size: 1.5rem;
             line-height: 1.6;
             font-weight: 500;
+            animation: fadeIn 0.5s ease 0.2s both;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         .compliment-name {
             font-size: 1.2rem;
             margin-top: 20px;
             opacity: 0.9;
+            animation: fadeIn 0.5s ease 0.4s both;
         }
 
         .category-selector {
@@ -61,12 +81,22 @@
             border-radius: 25px;
             cursor: pointer;
             font-size: 0.9rem;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
+            transform: scale(1);
+        }
+
+        .category-btn:hover {
+            transform: scale(1.05);
         }
 
         .category-btn.active {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             color: white;
+            transform: scale(1.1);
+        }
+
+        .category-btn.roast-active.active {
+            background: linear-gradient(135deg, #434343 0%, #000000 100%);
         }
 
         .hidden {
@@ -88,6 +118,11 @@
             background: #f0f0f0;
             padding: 10px 20px;
             border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-wrapper:hover {
+            background: #e0e0e0;
         }
 
         .toggle-switch {
@@ -97,7 +132,7 @@
             background: #ccc;
             border-radius: 13px;
             cursor: pointer;
-            transition: background 0.3s;
+            transition: background 0.3s ease;
         }
 
         .toggle-switch.active {
@@ -113,7 +148,7 @@
             border-radius: 50%;
             top: 2px;
             left: 2px;
-            transition: transform 0.3s;
+            transition: transform 0.3s ease;
         }
 
         .toggle-switch.active::after {
@@ -124,6 +159,93 @@
             font-weight: 600;
             color: #333;
             font-size: 0.9rem;
+        }
+
+        .intensity-container {
+            background: #f0f0f0;
+            padding: 15px 25px;
+            border-radius: 25px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .intensity-label {
+            font-weight: 600;
+            color: #333;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        .intensity-slider {
+            -webkit-appearance: none;
+            width: 200px;
+            height: 8px;
+            border-radius: 4px;
+            background: linear-gradient(to right, #4CAF50 0%, #FFC107 50%, #f44336 100%);
+            outline: none;
+            cursor: pointer;
+        }
+
+        .intensity-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid #333;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+
+        .intensity-slider::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+        }
+
+        .intensity-slider::-moz-range-thumb {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid #333;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+
+        .intensity-slider::-moz-range-thumb:hover {
+            transform: scale(1.2);
+        }
+
+        .intensity-value {
+            font-weight: 700;
+            font-size: 1rem;
+            min-width: 80px;
+            text-align: center;
+            padding: 5px 15px;
+            border-radius: 15px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .intensity-value.mild {
+            color: #4CAF50;
+            background: #E8F5E9;
+        }
+
+        .intensity-value.medium {
+            color: #FFC107;
+            background: #FFF8E1;
+        }
+
+        .intensity-value.savage {
+            color: #f44336;
+            background: #FFEBEE;
         }
 
         .action-row {
@@ -140,7 +262,12 @@
             cursor: pointer;
             font-size: 1rem;
             font-weight: 600;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
+            transform: scale(1);
+        }
+
+        .action-btn:hover {
+            transform: scale(1.05);
         }
 
         .generate-btn {
@@ -149,7 +276,7 @@
         }
 
         .generate-btn:hover {
-            transform: translateY(-2px);
+            transform: translateY(-2px) scale(1.02);
             box-shadow: 0 10px 30px rgba(245, 87, 108, 0.4);
         }
 
@@ -177,11 +304,11 @@
         @keyframes float-up {
             0% {
                 opacity: 1;
-                transform: translateY(0) scale(1);
+                transform: translateY(0) scale(1) rotate(0deg);
             }
             100% {
                 opacity: 0;
-                transform: translateY(-100px) scale(1.5);
+                transform: translateY(-100px) scale(1.5) rotate(360deg);
             }
         }
 
@@ -189,6 +316,26 @@
             text-align: center;
             padding: 20px;
             color: #666;
+        }
+
+        .category-scroll {
+            max-width: 100%;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+
+        .category-scroll::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .category-scroll::-webkit-scrollbar-track {
+            background: #f0f0f0;
+            border-radius: 3px;
+        }
+
+        .category-scroll::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border-radius: 3px;
         }
     </style>
 </head>
@@ -211,22 +358,37 @@
             </div>
         </div>
 
+        <div class="intensity-container hidden" id="intensityContainer">
+            <span class="intensity-label">🌶️ Intensity:</span>
+            <input type="range" min="1" max="3" value="2" class="intensity-slider" id="intensitySlider" oninput="updateIntensity()">
+            <span class="intensity-value medium" id="intensityValue">Medium</span>
+        </div>
+
         <label style="font-weight: 600; color: #333; display: block; margin-bottom: 10px;">Choose Category:</label>
-        <div class="category-selector">
-            <button class="category-btn active" onclick="setCategory('general', this)">✨ General</button>
-            <button class="category-btn" onclick="setCategory('friendship', this)">🤝 Friendship</button>
-            <button class="category-btn" onclick="setCategory('personality', this)">🌟 Personality</button>
-            <button class="category-btn" onclick="setCategory('funny', this)">😄 Funny</button>
-            <button class="category-btn" onclick="setCategory('support', this)">💪 Support</button>
-            <button class="category-btn" onclick="setCategory('love', this)">💕 Love</button>
-            <button class="category-btn" onclick="setCategory('birthday', this)">🎂 Birthday</button>
-            <button class="category-btn" onclick="setCategory('work', this)">💼 Work</button>
-            <button class="category-btn" onclick="setCategory('fitness', this)">🏋️ Fitness</button>
+        <div class="category-scroll">
+            <div class="category-selector">
+                <button class="category-btn active" onclick="setCategory('general', this)">✨ General</button>
+                <button class="category-btn" onclick="setCategory('friendship', this)">🤝 Friendship</button>
+                <button class="category-btn" onclick="setCategory('personality', this)">🌟 Personality</button>
+                <button class="category-btn" onclick="setCategory('funny', this)">😄 Funny</button>
+                <button class="category-btn" onclick="setCategory('support', this)">💪 Support</button>
+                <button class="category-btn" onclick="setCategory('love', this)">💕 Love</button>
+                <button class="category-btn" onclick="setCategory('birthday', this)">🎂 Birthday</button>
+                <button class="category-btn" onclick="setCategory('work', this)">💼 Work</button>
+                <button class="category-btn" onclick="setCategory('fitness', this)">🏋️ Fitness</button>
+                <button class="category-btn" onclick="setCategory('family', this)">👨‍👩‍👧‍👦 Family</button>
+                <button class="category-btn" onclick="setCategory('teacher', this)">👩‍🏫 Teacher</button>
+                <button class="category-btn" onclick="setCategory('boss', this)">👔 Boss</button>
+                <button class="category-btn" onclick="setCategory('pet', this)">🐕 Pet</button>
+                <button class="category-btn" onclick="setCategory('anniversary', this)">💑 Anniversary</button>
+                <button class="category-btn" onclick="setCategory('graduation', this)">🎓 Graduation</button>
+                <button class="category-btn" onclick="setCategory('goodbye', this)">👋 Goodbye</button>
+            </div>
         </div>
 
         <button class="btn generate-btn" onclick="generateCompliment()">Generate Compliment</button>
 
-        <div class="compliment-card" id="complimentCard" style="display: none;">
+        <div class="compliment-card" id="complimentCard">
             <div class="compliment-emoji" id="complimentEmoji">💖</div>
             <div class="compliment-text" id="complimentText"></div>
             <div class="compliment-name" id="complimentName"></div>
@@ -243,6 +405,7 @@
     <script>
         let currentCategory = 'general';
         let isRoastMode = false;
+        let roastIntensity = 2; // 1 = mild, 2 = medium, 3 = savage
         let compliments = {};
         let roasts = {};
         let dataLoaded = false;
@@ -281,17 +444,42 @@
             isRoastMode = !isRoastMode;
             const toggle = document.getElementById('roastToggle');
             const card = document.getElementById('complimentCard');
+            const intensityContainer = document.getElementById('intensityContainer');
+            const categoryBtns = document.querySelectorAll('.category-btn');
             
             if (isRoastMode) {
                 toggle.classList.add('active');
                 card.classList.add('roast-mode');
+                intensityContainer.classList.remove('hidden');
+                categoryBtns.forEach(btn => btn.classList.add('roast-active'));
                 document.querySelector('h1').textContent = '🔥 Roast Generator';
                 document.querySelector('.subtitle').textContent = 'Brace yourself for brutal honesty!';
             } else {
                 toggle.classList.remove('active');
                 card.classList.remove('roast-mode');
+                intensityContainer.classList.add('hidden');
+                categoryBtns.forEach(btn => btn.classList.remove('roast-active'));
                 document.querySelector('h1').textContent = '💬 Compliment Generator';
                 document.querySelector('.subtitle').textContent = 'Spread positivity with heartfelt compliments!';
+            }
+        }
+
+        function updateIntensity() {
+            const slider = document.getElementById('intensitySlider');
+            const valueDisplay = document.getElementById('intensityValue');
+            roastIntensity = parseInt(slider.value);
+            
+            valueDisplay.classList.remove('mild', 'medium', 'savage');
+            
+            if (roastIntensity === 1) {
+                valueDisplay.textContent = '😇 Mild';
+                valueDisplay.classList.add('mild');
+            } else if (roastIntensity === 2) {
+                valueDisplay.textContent = '😏 Medium';
+                valueDisplay.classList.add('medium');
+            } else {
+                valueDisplay.textContent = '😈 Savage';
+                valueDisplay.classList.add('savage');
             }
         }
 
@@ -302,25 +490,57 @@
             }
 
             const friendName = document.getElementById('friendName').value.trim() || 'You';
-            const sourceData = isRoastMode ? roasts : compliments;
-            const categoryData = sourceData[currentCategory];
-            const randomItem = categoryData[Math.floor(Math.random() * categoryData.length)];
+            const card = document.getElementById('complimentCard');
+            
+            // Hide card first for animation
+            card.classList.remove('show');
+            
+            setTimeout(() => {
+                let sourceData = isRoastMode ? roasts : compliments;
+                let categoryData = sourceData[currentCategory];
+                
+                // Apply intensity filter for roasts
+                if (isRoastMode && categoryData) {
+                    const totalItems = categoryData.length;
+                    let startIndex, endIndex;
+                    
+                    if (roastIntensity === 1) {
+                        // Mild: first 33% of roasts (gentler ones)
+                        startIndex = 0;
+                        endIndex = Math.floor(totalItems * 0.33);
+                    } else if (roastIntensity === 2) {
+                        // Medium: middle 33% of roasts
+                        startIndex = Math.floor(totalItems * 0.33);
+                        endIndex = Math.floor(totalItems * 0.66);
+                    } else {
+                        // Savage: last 34% of roasts (harshest ones)
+                        startIndex = Math.floor(totalItems * 0.66);
+                        endIndex = totalItems;
+                    }
+                    
+                    const filteredRoasts = categoryData.slice(startIndex, endIndex);
+                    categoryData = filteredRoasts.length > 0 ? filteredRoasts : categoryData;
+                }
+                
+                const randomItem = categoryData[Math.floor(Math.random() * categoryData.length)];
 
-            // Replace {name} placeholder with actual name
-            let text = randomItem.text.replace(/{name}/g, friendName);
+                // Replace {name} placeholder with actual name
+                let text = randomItem.text.replace(/{name}/g, friendName);
 
-            document.getElementById('complimentEmoji').textContent = randomItem.emoji;
-            document.getElementById('complimentText').textContent = text;
-            document.getElementById('complimentName').textContent = isRoastMode ? `🔥 Roasted: ${friendName}` : `✨ For: ${friendName}`;
+                document.getElementById('complimentEmoji').textContent = randomItem.emoji;
+                document.getElementById('complimentText').textContent = text;
+                document.getElementById('complimentName').textContent = isRoastMode ? `🔥 Roasted: ${friendName}` : `✨ For: ${friendName}`;
 
-            document.getElementById('complimentCard').style.display = 'flex';
-            document.getElementById('actionRow').style.display = 'flex';
+                // Show card with animation
+                card.classList.add('show');
+                document.getElementById('actionRow').style.display = 'flex';
 
-            if (!isRoastMode) {
-                createFloatingHearts();
-            } else {
-                createFloatingFire();
-            }
+                if (!isRoastMode) {
+                    createFloatingHearts();
+                } else {
+                    createFloatingFire();
+                }
+            }, 300);
         }
 
         function copyCompliment() {
@@ -334,10 +554,10 @@
             const container = document.getElementById('floatingHearts');
             container.innerHTML = '';
 
-            for (let i = 0; i < 10; i++) {
+            for (let i = 0; i < 15; i++) {
                 const heart = document.createElement('div');
                 heart.className = 'heart';
-                heart.textContent = ['💖', '💕', '✨', '💗', '💝'][Math.floor(Math.random() * 5)];
+                heart.textContent = ['💖', '💕', '✨', '💗', '💝', '🌟'][Math.floor(Math.random() * 6)];
                 heart.style.left = Math.random() * 100 + 'vw';
                 heart.style.top = Math.random() * 50 + 50 + 'vh';
                 heart.style.animationDelay = Math.random() * 0.5 + 's';
@@ -351,10 +571,10 @@
             const container = document.getElementById('floatingHearts');
             container.innerHTML = '';
 
-            for (let i = 0; i < 10; i++) {
+            for (let i = 0; i < 15; i++) {
                 const fire = document.createElement('div');
                 fire.className = 'heart';
-                fire.textContent = ['🔥', '💀', '⚠️', '🌶️', '😈'][Math.floor(Math.random() * 5)];
+                fire.textContent = ['🔥', '💀', '⚠️', '🌶️', '😈', '💥'][Math.floor(Math.random() * 6)];
                 fire.style.left = Math.random() * 100 + 'vw';
                 fire.style.top = Math.random() * 50 + 50 + 'vh';
                 fire.style.animationDelay = Math.random() * 0.5 + 's';
@@ -363,6 +583,11 @@
                 setTimeout(() => fire.remove(), 2000);
             }
         }
+
+        // Initialize card state
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('complimentCard').style.display = 'flex';
+        });
     </script>
 </body>
 </html>
