@@ -276,15 +276,17 @@
         let roasts = {};
         let dataLoaded = false;
 
-        // Load data from JSON file
+        // Load data from JSON file with cache busting
         async function loadData() {
             try {
-                const response = await fetch('compliments-data.json');
+                const response = await fetch('compliments-data.json?v=' + Date.now());
                 const data = await response.json();
                 compliments = data.compliments;
                 roasts = data.roasts;
                 dataLoaded = true;
-                console.log('Data loaded successfully!');
+                console.log('✅ Data loaded successfully!');
+                console.log('📊 Loaded', Object.keys(compliments).length, 'compliment categories');
+                console.log('🔥 Loaded', Object.keys(roasts).length, 'roast categories');
             } catch (error) {
                 console.error('Error loading data:', error);
                 alert('Failed to load compliments data. Please refresh the page.');
