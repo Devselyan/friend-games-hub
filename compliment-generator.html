@@ -25,10 +25,6 @@
             background: linear-gradient(135deg, #434343 0%, #000000 100%);
         }
 
-        .compliment-card.nsfw-mode {
-            background: linear-gradient(135deg, #8E0E00 0%, #1F1C18 100%);
-        }
-
         .compliment-card:hover {
             transform: scale(1.02);
         }
@@ -73,10 +69,6 @@
             color: white;
         }
 
-        .category-btn.nsfw-btn.active {
-            background: linear-gradient(135deg, #8E0E00 0%, #1F1C18 100%);
-        }
-
         .hidden {
             display: none !important;
         }
@@ -112,10 +104,6 @@
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
         }
 
-        .toggle-switch.nsfw-active {
-            background: linear-gradient(135deg, #8E0E00 0%, #1F1C18 100%);
-        }
-
         .toggle-switch::after {
             content: '';
             position: absolute;
@@ -128,8 +116,7 @@
             transition: transform 0.3s;
         }
 
-        .toggle-switch.active::after,
-        .toggle-switch.nsfw-active::after {
+        .toggle-switch.active::after {
             transform: translateX(24px);
         }
 
@@ -198,16 +185,6 @@
             }
         }
 
-        .warning-label {
-            background: #fff3cd;
-            border: 1px solid #ffc107;
-            color: #856404;
-            padding: 10px 20px;
-            border-radius: 10px;
-            margin: 15px 0;
-            font-size: 0.9rem;
-        }
-
         .loading {
             text-align: center;
             padding: 20px;
@@ -232,14 +209,6 @@
                 <div class="toggle-switch" id="roastToggle" onclick="toggleRoastMode()"></div>
                 <span class="toggle-label">🔥 Roast Mode</span>
             </div>
-            <div class="toggle-wrapper">
-                <div class="toggle-switch" id="nsfwToggle" onclick="toggleNsfwMode()"></div>
-                <span class="toggle-label">🌶️ Naughty Mode</span>
-            </div>
-        </div>
-
-        <div id="nsfwWarning" class="warning-label hidden">
-            ⚠️ <strong>18+ Content:</strong> Naughty mode contains adult humor. Use responsibly!
         </div>
 
         <label style="font-weight: 600; color: #333; display: block; margin-bottom: 10px;">Choose Category:</label>
@@ -253,7 +222,6 @@
             <button class="category-btn" onclick="setCategory('birthday', this)">🎂 Birthday</button>
             <button class="category-btn" onclick="setCategory('work', this)">💼 Work</button>
             <button class="category-btn" onclick="setCategory('fitness', this)">🏋️ Fitness</button>
-            <button class="category-btn nsfw-btn hidden" onclick="setCategory('naughty', this)" id="naughtyBtn">🌶️ Naughty</button>
         </div>
 
         <button class="btn generate-btn" onclick="generateCompliment()">Generate Compliment</button>
@@ -275,7 +243,6 @@
     <script>
         let currentCategory = 'general';
         let isRoastMode = false;
-        let isNsfwMode = false;
         let compliments = {};
         let roasts = {};
         let dataLoaded = false;
@@ -328,49 +295,6 @@
             }
         }
 
-        // Expose to window for onclick handler
-        window.toggleNsfwMode = function() {
-            isNsfwMode = !isNsfwMode;
-            console.log('🌶️ toggleNsfwMode called, isNsfwMode:', isNsfwMode);
-            
-            const toggle = document.getElementById('nsfwToggle');
-            const naughtyBtn = document.getElementById('naughtyBtn');
-            const warning = document.getElementById('nsfwWarning');
-            const card = document.getElementById('complimentCard');
-            
-            console.log('Elements:', {
-                toggle: toggle ? 'found' : 'NOT FOUND',
-                naughtyBtn: naughtyBtn ? 'found' : 'NOT FOUND',
-                warning: warning ? 'found' : 'NOT FOUND',
-                card: card ? 'found' : 'NOT FOUND'
-            });
-
-            if (isNsfwMode) {
-                console.log('Enabling naughty mode...');
-                toggle.classList.add('nsfw-active');
-                naughtyBtn.classList.remove('hidden');
-                warning.classList.remove('hidden');
-                card.classList.add('nsfw-mode');
-                console.log('✅ Naughty mode ENABLED');
-                console.log('naughtyBtn classes:', naughtyBtn.classList);
-                console.log('warning classes:', warning.classList);
-            } else {
-                console.log('Disabling naughty mode...');
-                toggle.classList.remove('nsfw-active');
-                naughtyBtn.classList.add('hidden');
-                warning.classList.add('hidden');
-                card.classList.remove('nsfw-mode');
-                console.log('❌ Naughty mode DISABLED');
-                if (currentCategory === 'naughty') {
-                    currentCategory = 'general';
-                    document.querySelectorAll('.category-btn').forEach(btn => {
-                        btn.classList.remove('active');
-                    });
-                    document.querySelector('.category-btn').classList.add('active');
-                }
-            }
-        };
-
         function generateCompliment() {
             if (!dataLoaded) {
                 alert('Loading content... please try again in a moment.');
@@ -392,9 +316,9 @@
             document.getElementById('complimentCard').style.display = 'flex';
             document.getElementById('actionRow').style.display = 'flex';
 
-            if (!isRoastMode && !isNsfwMode) {
+            if (!isRoastMode) {
                 createFloatingHearts();
-            } else if (isRoastMode) {
+            } else {
                 createFloatingFire();
             }
         }
